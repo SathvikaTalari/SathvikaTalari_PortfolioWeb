@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Sathvika Talari — Computer Science student in Hyderabad. Full-Stack & AI-ML Developer with experience in Python, Flask, Django, React, and Generative AI. 9.5 CGPA.">
+  <meta name="theme-color" content="#090d16">
+  <meta name="author" content="Sathvika Talari">
+  <title>Sathvika Talari · CS Student &amp; Full-Stack Developer</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/portfolio-mark.svg">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+
+  <!-- Devicon CDN for authentic programming language & tech logos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="vendor/bootstrap.bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Accessible Skip Link -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Scroll progress bar -->
+  <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       SITE HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar navbar-expand-xl container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="#home">
+        <img src="assets/portfolio-mark.svg" class="brand-monogram" width="40" height="40" alt="ST monogram">
+        <div class="brand-text">
+          <span class="brand-name">SATHVIKA TALARI</span>
+          <span class="brand-role">CS STUDENT · HYDERABAD</span>
+        </div>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 ms-auto ms-xl-0 order-xl-last">
+        <button class="btn theme-button" id="theme-toggle" type="button" aria-pressed="true"
+          aria-label="Toggle light/dark theme" title="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+          </svg>
+        </button>
+
+        <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer"
+          class="btn btn-outline-studio btn-sm d-none d-md-inline-flex" id="header-github-btn" title="GitHub Profile">
+          <i class="devicon-github-original" style="font-size: 1rem;"></i>
+          GitHub
+        </a>
+
+        <a href="assets/SathvikaTalari_Resume.pdf" download="SathvikaTalari_Resume.pdf"
+          class="btn btn-outline-studio btn-sm d-none d-sm-inline-flex" id="header-resume-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Resume
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main id="main">
+
+    <!-- ===================================================================
+         1. HERO SECTION
+         =================================================================== -->
+    <section class="hero section" id="home" aria-labelledby="home-title">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+      <div class="container position-relative" style="z-index: 1;">
+        <div class="row g-5 align-items-center">
+
+          <!-- Left: Hero Text & CTAs -->
+          <div class="col-lg-6">
+            <div class="hero-availability reveal">
+              <span class="availability-dot" aria-hidden="true"></span>
+              AVAILABLE FOR FULL-STACK &amp; AI-ML ROLES
+            </div>
+
+            <h1 class="hero-title" id="home-title">
+              <span>Designing intelligent software,</span><br>
+              <span class="text-gradient">engineering robust web solutions.</span>
+            </h1>
+
+            <p class="hero-subtitle reveal delay-200">
+              I'm <strong>Sathvika Talari</strong>, a Computer Science student at Stanley College with experience in
+              Python development, Flask &amp; Django frameworks, React, and Generative AI integrations.
+            </p>
+
+            <!-- Typewriter -->
+            <div class="typewriter-wrap reveal delay-300" aria-live="polite">
+              <span class="typewriter-prefix">Specialized in</span>
+              <span id="typewriter-text"></span>
+              <span class="typewriter-cursor" aria-hidden="true"></span>
+            </div>
+
+            <!-- Action buttons -->
+            <div class="hero-actions reveal delay-400">
+              <a class="btn btn-primary" href="#projects" id="hero-projects-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+                Explore Projects (4)
+              </a>
+              <a class="btn btn-outline-studio" href="assets/SathvikaTalari_Resume.pdf"
+                download="SathvikaTalari_Resume.pdf" id="hero-resume-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download Resume
+              </a>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="hero-stats reveal delay-500">
+              <div class="stat-item">
+                <div class="stat-value" data-target="9.5" data-decimals="1">9.5</div>
+                <div class="stat-label">CGPA / 10.0</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-target="4" data-decimals="0">4</div>
+                <div class="stat-label">Core Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-target="1" data-decimals="0">#1</div>
+                <div class="stat-label">Ideathon Winner</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value" data-target="3" data-decimals="0">3rd</div>
+                <div class="stat-label">GenAI Hackathon</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Floating Code Card with Neon Badges -->
+          <div class="col-lg-6 d-none d-lg-flex justify-content-center">
+            <div class="hero-visual" style="width:100%; max-width:460px; position:relative;">
+              <div class="hero-card-float">
+                <div class="card-header-line">
+                  <div class="dot-red"></div>
+                  <div class="dot-yellow"></div>
+                  <div class="dot-green"></div>
+                  <span class="card-filename">sathvika_talari.py</span>
+                </div>
+                <div class="code-block" aria-hidden="true">
+                  <div class="code-line"><span class="code-ln">1</span><span><span class="code-keyword">class</span>
+                      <span class="code-func">SoftwareEngineer</span>:</span></div>
+                  <div class="code-line"><span class="code-ln">2</span><span>&nbsp;&nbsp;<span
+                        class="code-prop">name</span> <span class="code-comment">=</span> <span
+                        class="code-string">"Sathvika Talari"</span></span></div>
+                  <div class="code-line"><span class="code-ln">3</span><span>&nbsp;&nbsp;<span
+                        class="code-prop">github</span> <span class="code-comment">=</span> <span
+                        class="code-string">"SathvikaTalari"</span></span></div>
+                  <div class="code-line"><span class="code-ln">4</span><span>&nbsp;&nbsp;<span
+                        class="code-prop">location</span> <span class="code-comment">=</span> <span
+                        class="code-string">"Hyderabad, India 🇮🇳"</span></span></div>
+                  <div class="code-line"><span class="code-ln">5</span><span>&nbsp;&nbsp;<span
+                        class="code-prop">degree</span> <span class="code-comment">=</span> <span
+                        class="code-string">"B.Tech CSE (2023-2027)"</span></span></div>
+                  <div class="code-line"><span class="code-ln">6</span><span>&nbsp;&nbsp;<span
+                        class="code-prop">cgpa</span> <span class="code-comment">=</span> <span
+                        class="code-num">9.5</span></span></div>
+                  <div class="code-line"><span class="code-ln">7</span><span></span></div>
+                  <div class="code-line"><span class="code-ln">8</span><span>&nbsp;&nbsp;<span
+                        class="code-prop">experience</span> <span class="code-comment">=</span> {</span></div>
+                  <div class="code-line"><span class="code-ln">9</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        class="code-string">"company"</span>: <span class="code-string">"Alonzo AI"</span>,</span></div>
+                  <div class="code-line"><span class="code-ln">10</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        class="code-string">"role"</span>: <span class="code-string">"Web Dev Intern (AI-ML)"</span></span></div>
+                  <div class="code-line"><span class="code-ln">11</span><span>&nbsp;&nbsp;}</span></div>
+                  <div class="code-line"><span class="code-ln">12</span><span></span></div>
+                  <div class="code-line"><span class="code-ln">13</span><span>&nbsp;&nbsp;<span
+                        class="code-keyword">def</span> <span class="code-func">build_impact</span>(<span
+                        class="code-var">self</span>):</span></div>
+                  <div class="code-line"><span class="code-ln">14</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        class="code-keyword">return</span> <span class="code-string">"High performance &amp; clean code ✨"</span></span></div>
+                </div>
+              </div>
+
+              <!-- Floating badges -->
+              <div class="float-badge float-badge-1" aria-hidden="true">
+                <span class="badge-icon">⭐</span>
+                <span>9.5 CGPA · Stanley College</span>
+              </div>
+              <div class="float-badge float-badge-2" aria-hidden="true">
+                <img src="assets/alonzo-ai-logo.png" alt="Alonzo AI Logo" class="float-badge-logo">
+                <span>Alonzo AI · Full Stack &amp; AI-ML</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         2. ABOUT SECTION
+         =================================================================== -->
+    <section class="section section-alt" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+
+          <div class="col-lg-4 reveal-left">
+            <span class="eyebrow">01 / About Me</span>
+            <h2 id="about-title">Applying technical knowledge to real-world challenges.</h2>
+          </div>
+
+          <div class="col-lg-8 reveal-right">
+            <p class="about-statement">
+              Computer Science student with experience in <em>Python development</em>, web application design using
+              <em>Flask &amp; Django</em>, and modern frontend engineering with <em>React</em>.
+            </p>
+
+            <div class="about-body">
+              <p>
+                Currently pursuing a Bachelor's Degree in Computer Science at <strong>Stanley College of Engineering and
+                  Technology, Hyderabad</strong> with a <strong>9.5 CGPA</strong>. Skilled in problem solving,
+                full-stack software development, role-based access architectures, and collaborative project execution.
+              </p>
+              <p>
+                My background covers designing end-to-end applications: from an <strong>AI-powered learning platform
+                  (LearnSphere)</strong> with Generative AI assistance, to an <strong>Automata Simulator</strong>
+                parsing complex formal language conversions, to developing full-stack medical and hospitality management
+                portals.
+              </p>
+            </div>
+
+            <!-- Key Fact Cards -->
+            <div class="facts-grid">
+              <div class="fact-card reveal delay-100">
+                <strong class="counter" data-target="9.5" data-decimals="1">9.5</strong>
+                <span>Current Degree CGPA</span>
+              </div>
+              <div class="fact-card reveal delay-200">
+                <strong>2023 – 2027</strong>
+                <span>Stanley College, Hyd</span>
+              </div>
+              <div class="fact-card reveal delay-300">
+                <strong
+                  style="font-size:1.35rem; padding-top:6px; color: var(--cyan); -webkit-text-fill-color: initial;">Alonzo
+                  AI</strong>
+                <span>Web Dev Intern (AI-ML)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. PROJECTS SECTION (All 4 Featured Projects from Resume)
+         =================================================================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4 reveal">
+          <div>
+            <span class="eyebrow">02 / Featured Projects</span>
+            <h2 id="projects-title">Solutions engineered with precision.</h2>
+            <p class="section-intro mb-0">Explore interactive demos, live simulation sandboxes, and architectural case
+              studies.</p>
+          </div>
+
+          <!-- Category filter buttons -->
+          <div class="filter-bar" role="group" aria-label="Filter projects by category">
+            <button class="btn filter-btn active" type="button" data-filter="all" aria-pressed="true"
+              id="filter-all">All Projects (4)</button>
+            <button class="btn filter-btn" type="button" data-filter="ai" aria-pressed="false" id="filter-ai">AI &amp;
+              ML</button>
+            <button class="btn filter-btn" type="button" data-filter="web" aria-pressed="false"
+              id="filter-web">Full-Stack Web</button>
+            <button class="btn filter-btn" type="button" data-filter="core" aria-pressed="false" id="filter-core">Core
+              CS &amp; Theory</button>
+          </div>
+        </div>
+
+        <p class="font-mono text-silver mb-4" id="project-count" style="font-size:0.8125rem" role="status"
+          aria-live="polite">4 projects shown</p>
+
+        <!-- Project grid (rendered dynamically with full details & live demo triggers) -->
+        <div class="row g-4" id="project-list"></div>
+
+        <noscript>
+          <div class="alert alert-info mt-3">Enable JavaScript to explore project case studies and interactive
+            demonstrations.</div>
+        </noscript>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         4. WORK EXPERIENCE (Alonzo AI Spotlight)
+         =================================================================== -->
+    <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="row g-5">
+
+          <div class="col-lg-4 reveal-left">
+            <span class="eyebrow">03 / Work Experience</span>
+            <h2 id="experience-title">Real-world engineering impact.</h2>
+            <p class="section-intro">Industry internship experience delivering scalable full-stack systems and automated
+              workflows.</p>
+          </div>
+
+          <div class="col-lg-8 reveal-right">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot" aria-hidden="true"></div>
+
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <span>MAY 2026 – JUNE 2026</span>
+                    <span class="timeline-badge">INDUSTRY INTERNSHIP</span>
+                  </div>
+
+                  <div class="d-flex align-items-center gap-3 mb-3">
+                    <img src="assets/alonzo-ai-logo.png" alt="Alonzo AI Logo" class="experience-company-logo" width="64" height="64">
+                    <div>
+                      <h3 class="timeline-company mb-0">Alonzo AI</h3>
+                      <span class="text-silver font-mono" style="font-size:0.78rem; letter-spacing:0.04em;">Bespoke AI Solutions</span>
+                    </div>
+                  </div>
+                  <div class="timeline-role">
+                    Web Development Intern — Medical Camp Management System — Full Stack and AI-ML
+                  </div>
+
+                  <ul class="timeline-bullets">
+                    <li>Developed a full-stack solution using React JS, Django and SQLite3 to automate patient
+                      registration, medical inventory tracking, reporting for medical camps, and real-time stock
+                      monitoring.</li>
+                    <li>Implemented secure role-based access control (RBAC) and optimized database management while
+                      actively debugging and maintaining system stability to ensure reliable camp operations.</li>
+                    <li>Streamlined on-ground medical data collection with real-time reporting dashboards for doctors,
+                      camp organizers, and administrative staff.</li>
+                  </ul>
+
+                  <div class="d-flex flex-wrap gap-2 mt-3">
+                    <span class="tag-item">React JS</span>
+                    <span class="tag-item">Django</span>
+                    <span class="tag-item">SQLite3</span>
+                    <span class="tag-item">Full Stack</span>
+                    <span class="tag-item">AI-ML Integration</span>
+                    <span class="tag-item">Role-Based Access Control</span>
+                    <span class="tag-item">Real-Time Inventory</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         5. SKILLS SECTION (With Real Language Logos)
+         =================================================================== -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5 reveal">
+          <div>
+            <span class="eyebrow">04 / Technical Toolkit</span>
+            <h2 id="skills-title">Skills &amp; Technologies.</h2>
+            <p class="section-intro mb-0">Verified programming languages, web stacks, frameworks, and developer tools
+              with authentic logos.</p>
+          </div>
+
+          <!-- Quick category selector -->
+          <div class="filter-bar" id="skills-filter-bar">
+            <button class="btn filter-btn active" type="button" data-skill-filter="all">All Skills</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="languages">Languages</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="web">Web &amp; Frameworks</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="tools">Databases &amp; Tools</button>
+          </div>
+        </div>
+
+        <!-- 1. Programming Languages -->
+        <div class="skill-category-block reveal" data-category="languages">
+          <h3 class="skill-category-title">
+            <span class="badge-num">01</span>
+            Programming Languages
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card"
+              style="--logo-glow: rgba(55, 118, 171, 0.3); --logo-border: #3776ab; --logo-shadow: rgba(55, 118, 171, 0.4);">
+              <div class="skill-icon-wrap">
+                <i class="devicon-python-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-role">Flask, Django &amp; AI-ML</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card"
+              style="--logo-glow: rgba(234, 45, 46, 0.3); --logo-border: #ea2d2e; --logo-shadow: rgba(234, 45, 46, 0.4);">
+              <div class="skill-icon-wrap">
+                <i class="devicon-java-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-role">OOP &amp; Core Systems</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card"
+              style="--logo-glow: rgba(247, 223, 30, 0.3); --logo-border: #f7df1e; --logo-shadow: rgba(247, 223, 30, 0.4);">
+              <div class="skill-icon-wrap">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-role">ES6+, DOM &amp; Front-End</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card"
+              style="--logo-glow: rgba(0, 89, 156, 0.3); --logo-border: #00599c; --logo-shadow: rgba(0, 89, 156, 0.4);">
+              <div class="skill-icon-wrap">
+                <i class="devicon-c-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">C Language</span>
+                <span class="skill-role">Data Structures &amp; DSA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Web Technologies -->
+        <div class="skill-category-block reveal" data-category="web">
+          <h3 class="skill-category-title">
+            <span class="badge-num">02</span>
+            Web Technologies
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(227, 79, 38, 0.3); --logo-border: #e34f26;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-html5-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">HTML5</span>
+                <span class="skill-role">Semantic Web &amp; SEO</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(21, 114, 182, 0.3); --logo-border: #1572b6;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-css3-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">CSS3</span>
+                <span class="skill-role">Modern Layouts &amp; Animation</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(121, 82, 179, 0.3); --logo-border: #7952b3;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-bootstrap-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-role">Responsive UI Framework</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(104, 159, 99, 0.3); --logo-border: #689f63;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-nodejs-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">NodeJS</span>
+                <span class="skill-role">Runtime &amp; Express APIs</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(119, 123, 179, 0.3); --logo-border: #777bb3;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-php-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">PHP</span>
+                <span class="skill-role">Server Scripting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Frameworks -->
+        <div class="skill-category-block reveal" data-category="web">
+          <h3 class="skill-category-title">
+            <span class="badge-num">03</span>
+            Frameworks
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(56, 189, 248, 0.25); --logo-border: var(--cyan);">
+              <div class="skill-icon-wrap">
+                <i class="devicon-flask-original" style="color: var(--cyan);"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Flask</span>
+                <span class="skill-role">REST APIs &amp; App Routing</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(97, 218, 251, 0.3); --logo-border: #61dafb;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-react-original colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">React JS</span>
+                <span class="skill-role">Component Architecture</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(255, 75, 75, 0.3); --logo-border: #ff4b4b;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-streamlit-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Streamlit</span>
+                <span class="skill-role">ML &amp; Data Prototyping</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(226, 53, 47, 0.3); --logo-border: #e2352f;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-angularjs-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">AngularJS</span>
+                <span class="skill-role">Single-Page Architecture</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Databases & Developer Tools -->
+        <div class="skill-category-block reveal" data-category="tools">
+          <h3 class="skill-category-title">
+            <span class="badge-num">04</span>
+            Databases &amp; Developer Tools
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(0, 117, 143, 0.3); --logo-border: #00758f;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-mysql-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-role">Relational DB &amp; Queries</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(0, 59, 87, 0.3); --logo-border: #003b57;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-sqlite-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">SQLite</span>
+                <span class="skill-role">Lightweight Local DB</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(240, 80, 50, 0.3); --logo-border: #f05032;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-git-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Git</span>
+                <span class="skill-role">Version Control</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(255, 255, 255, 0.2); --logo-border: #94a3c0;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-github-original" style="color: var(--ink-primary);"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">GitHub</span>
+                <span class="skill-role">Collaboration &amp; CI/CD</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(0, 122, 204, 0.3); --logo-border: #007acc;">
+              <div class="skill-icon-wrap">
+                <i class="devicon-vscode-plain colored"></i>
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-role">Primary IDE &amp; Debugging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Areas of Interest -->
+        <div class="skill-category-block reveal" data-category="tools">
+          <h3 class="skill-category-title">
+            <span class="badge-num">05</span>
+            Areas of Interest
+          </h3>
+          <div class="row g-3">
+            <div class="col-md-3 col-sm-6">
+              <div class="interest-card">
+                <span class="interest-icon">🤖</span>
+                <div class="interest-title">AI &amp; ML</div>
+                <p class="interest-desc">Generative AI APIs, LLM integration, intelligent tutoring platforms &amp;
+                  automation.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="interest-card">
+                <span class="interest-icon">🌐</span>
+                <div class="interest-title">Web Development</div>
+                <p class="interest-desc">Full-stack Python &amp; JavaScript apps, RESTful APIs, role-based dashboards.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="interest-card">
+                <span class="interest-icon">⚡</span>
+                <div class="interest-title">Web3</div>
+                <p class="interest-desc">Decentralized protocols, smart contracts, and emerging distributed systems.</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="interest-card">
+                <span class="interest-icon">🏆</span>
+                <div class="interest-title">Competitive Coding</div>
+                <p class="interest-desc">Data structures, algorithmic problem solving, hackathons &amp; optimization.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. EDUCATION SECTION
+         =================================================================== -->
+    <section class="section section-alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="row g-5">
+
+          <div class="col-lg-4 reveal-left">
+            <span class="eyebrow">05 / Education</span>
+            <h2 id="education-title">Academic excellence.</h2>
+            <p class="section-intro">Consistently high performance across engineering degree and secondary education.
+            </p>
+          </div>
+
+          <div class="col-lg-8 reveal-right">
+
+            <!-- Bachelor's Degree Panel -->
+            <div class="degree-panel">
+              <div>
+                <p class="degree-years">2023 – 2027 · CURRENT DEGREE</p>
+                <h3 class="degree-title">Bachelor of Technology · Computer Science</h3>
+                <p class="degree-institution">Stanley College of Engineering and Technology, Hyderabad</p>
+              </div>
+              <div class="cgpa-badge">
+                <span class="cgpa-value counter" data-target="9.5" data-decimals="1">9.5</span>
+                <span class="cgpa-label">CURRENT CGPA</span>
+              </div>
+            </div>
+
+            <!-- CBSE Board Records Table -->
+            <div class="education-table-wrap">
+              <div class="table-responsive">
+                <table class="table education-table" aria-label="CBSE Board Education Records">
+                  <caption>School Education · CBSE Board</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Qualification</th>
+                      <th scope="col">Year</th>
+                      <th scope="col">Board</th>
+                      <th scope="col" class="text-end">Grade / Score</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Class 12th Senior Secondary</th>
+                      <td class="font-mono">2022 – 2023</td>
+                      <td>CBSE Board</td>
+                      <td class="text-end font-mono text-cyan fw-bold">7.5</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Class 10th Secondary School</th>
+                      <td class="font-mono">2021</td>
+                      <td>CBSE Board</td>
+                      <td class="text-end font-mono text-cyan fw-bold">7.5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. ACHIEVEMENTS & CERTIFICATIONS SECTION
+         =================================================================== -->
+    <section class="section" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+
+        <div class="section-heading mb-5 reveal">
+          <span class="eyebrow">06 / Achievements &amp; Certifications</span>
+          <h2 id="achievements-title">Honors &amp; verified credentials.</h2>
+          <p class="section-intro">Recognition in competitive hackathons, entrepreneurship training, and specialized
+            development courses.</p>
+        </div>
+
+        <!-- Achievements Grid -->
+        <h3 class="mb-3 font-mono text-cyan" style="font-size: 1.1rem; letter-spacing: 0.04em;">🏆 KEY ACHIEVEMENTS</h3>
+        <div class="row g-4 mb-5">
+          <div class="col-md-4 reveal delay-100">
+            <div class="achievement-card">
+              <span class="achievement-icon" aria-hidden="true">🥉</span>
+              <div>
+                <div class="achievement-title">3rd Place — Gen AI Hackathon</div>
+                <div class="achievement-meta">Conducted by SmartBridge · Awarded for innovative Generative AI
+                  application engineering.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal delay-200">
+            <div class="achievement-card">
+              <span class="achievement-icon" aria-hidden="true">🏆</span>
+              <div>
+                <div class="achievement-title">Winner — Ideathon Competition</div>
+                <div class="achievement-meta">Received prestigious Entrepreneurship training at WE-Hub Headquarters,
+                  Hyderabad.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal delay-300">
+            <div class="achievement-card">
+              <span class="achievement-icon" aria-hidden="true">🚀</span>
+              <div>
+                <div class="achievement-title">Smart India Hackathon (SIH)</div>
+                <div class="achievement-meta">Selected for Internal Round of Smart India Hackathon solving national
+                  challenges.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Grid -->
+        <h3 class="mb-3 font-mono text-cyan" style="font-size: 1.1rem; letter-spacing: 0.04em;">📜 VERIFIED
+          CERTIFICATIONS</h3>
+        <div class="row g-4 reveal">
+          <div class="col-md-6">
+            <div class="cert-card">
+              <span class="cert-icon" aria-hidden="true">🐍</span>
+              <div>
+                <div class="cert-title">Python Programming and Development Certification</div>
+                <div class="cert-issuer">Vault of Codes</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="cert-card">
+              <span class="cert-icon" aria-hidden="true">💻</span>
+              <div>
+                <div class="cert-title">Complete Web Development Bootcamp</div>
+                <div class="cert-issuer">Dr. Angela Yu · Udemy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. EXTRACURRICULAR ACTIVITIES & HOBBIES
+         =================================================================== -->
+    <section class="section section-alt" id="activities" aria-labelledby="activities-title">
+      <div class="container">
+
+        <div class="section-heading mb-5 reveal">
+          <span class="eyebrow">07 / Beyond the Code</span>
+          <h2 id="activities-title">Leadership, community &amp; interests.</h2>
+          <p class="section-intro">Active engagement in peer communities, global volunteering, and technical curiosity.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Extracurricular Activities -->
+          <div class="col-lg-6 reveal-left">
+            <div class="activity-card">
+              <h4>
+                <span style="color: var(--cyan);">⚡</span>
+                Extracurricular Activities
+              </h4>
+              <ul class="activity-list">
+                <li>Participated in multiple hackathons and innovation challenges focused on developing practical
+                  technology solutions.</li>
+                <li>Volunteered at the International Rice Conference, helping in event coordination and supporting
+                  participant activities.</li>
+                <li>Actively involved in technical learning communities and peer discussions on programming and software
+                  development.</li>
+                <li>Experiencing new technologies regularly and building small projects to strengthen programming
+                  skills.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Hobbies -->
+          <div class="col-lg-6 reveal-right">
+            <div class="activity-card">
+              <h4>
+                <span style="color: var(--violet);">🎯</span>
+                Hobbies &amp; Interests
+              </h4>
+              <ul class="activity-list">
+                <li>Competitive Programming and algorithmic problem solving across various platforms.</li>
+                <li>Exploring Artificial Intelligence, LLMs, and emerging technologies.</li>
+                <li>Participating in competitive Hackathons, Ideathons, and tech team events.</li>
+                <li>Reading books and research articles about technology, system architecture, and innovation.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         9. CONTACT SECTION
+         =================================================================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- Left: Contact Details -->
+          <div class="col-lg-5 reveal-left">
+            <span class="eyebrow">08 / Let's Connect</span>
+            <h2 id="contact-title">Get in touch.</h2>
+            <p>Interested in hiring, collaborating on an AI/full-stack project, or discussing engineering opportunities?
+              Drop me a line.</p>
+
+            <div class="contact-meta-card mt-4">
+              <span class="font-mono text-silver"
+                style="font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;">Direct Email</span>
+              <a class="contact-email-link" href="mailto:sathvika.talari04@gmail.com" id="email-link">
+                sathvika.talari04@gmail.com
+              </a>
+
+              <p class="contact-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Hyderabad, Telangana, India
+              </p>
+
+              <!-- Social Links -->
+              <div class="contact-social-links">
+                <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer" class="social-link-row"
+                  id="github-link">
+                  <i class="devicon-github-original" style="font-size: 1.25rem;"></i>
+                  <span>github.com/SathvikaTalari</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-row"
+                  id="linkedin-link">
+                  <i class="devicon-linkedin-plain colored" style="font-size: 1.25rem;"></i>
+                  <span>LinkedIn Profile</span>
+                </a>
+              </div>
+
+              <a class="btn btn-outline-studio w-100" href="assets/SathvikaTalari_Resume.pdf"
+                download="SathvikaTalari_Resume.pdf" id="contact-resume-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                Download Updated Resume (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="col-lg-7 reveal-right">
+            <div class="contact-form-card">
+              <h3 class="mb-1">Send a Message</h3>
+              <p class="text-silver mb-4" style="font-size:0.875rem;">Real-time validated contact form.</p>
+
+              <form id="contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-sm-6">
+                    <label class="form-label" for="contact-name">Your Name</label>
+                    <input class="form-control" type="text" name="name" id="contact-name" autocomplete="name"
+                      maxlength="80" required aria-describedby="name-error" placeholder="Alex Johnson">
+                    <div class="invalid-feedback" id="name-error"></div>
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label" for="contact-email">Email Address</label>
+                    <input class="form-control" type="email" name="email" id="contact-email" autocomplete="email"
+                      maxlength="254" required aria-describedby="email-error" placeholder="alex@company.com">
+                    <div class="invalid-feedback" id="email-error"></div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="contact-message">Your Message</label>
+                    <textarea class="form-control" id="contact-message" name="message" rows="5" minlength="10"
+                      maxlength="1000" required aria-describedby="msg-help msg-error"
+                      placeholder="Hi Sathvika, I'd like to discuss an opportunity..."></textarea>
+                    <div id="msg-help" class="form-help-text">
+                      <span>10–1,000 characters required</span>
+                      <span id="character-count">0 / 1,000</span>
+                    </div>
+                    <div class="invalid-feedback" id="msg-error"></div>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary mt-4" id="form-submit-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                  </svg>
+                  Send Message
+                </button>
+
+                <div id="form-status" class="mt-3" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       SITE FOOTER
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="footer-brand-link" href="#home">
+          SATHVIKA TALARI
+          <span>COMPUTER SCIENCE · FULL-STACK · AI-ML</span>
+        </a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; <span id="year">2026</span> Sathvika Talari · <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);">@SathvikaTalari</a>
+      </p>
+
+      <a href="#home" class="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+        Back to top
+      </a>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       PROJECT CASE STUDY & INTERACTIVE DEMO MODAL
+       =================================================================== -->
+  <div class="modal fade" id="project-modal" tabindex="-1" aria-labelledby="project-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <span class="modal-meta-label" id="project-modal-badge"></span>
+            <h2 class="modal-title" id="project-modal-title"></h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <span class="modal-meta-label">Overview &amp; Purpose</span>
+          <p id="project-modal-description" class="mb-4"></p>
+
+          <span class="modal-meta-label">Technical Contribution</span>
+          <p id="project-modal-contribution" class="mb-4 text-silver" style="font-size:0.9375rem;"></p>
+
+          <span class="modal-meta-label">Key Features &amp; Capabilities</span>
+          <ul id="project-modal-concepts" class="modal-highlights"></ul>
+
+          <span class="modal-meta-label">Technology Stack</span>
+          <ul id="project-modal-tags" class="tag-list mb-4"></ul>
+
+          <!-- Interactive Live Demo Sandbox Container -->
+          <div id="project-modal-interactive-area" class="demo-sandbox"></div>
+        </div>
+
+        <div class="modal-footer d-flex justify-content-between align-items-center flex-wrap gap-2">
+          <button class="btn btn-outline-studio btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+          <a id="project-modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="display: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+            Launch Deployed App ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
