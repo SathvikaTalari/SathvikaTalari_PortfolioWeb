@@ -901,9 +901,8 @@ if (contactForm) {
       formFeedback.className = "alert mt-3";
       formFeedback.style.cssText = "background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.3); border-radius: 10px; padding: 16px; color: var(--ink-primary);";
       formFeedback.innerHTML = `
-        <strong style="color:#10b981;">✓ Message Formatted Correctly!</strong><br>
-        <span style="font-size:0.875rem; color: var(--ink-secondary);">To connect directly with Sathvika, please send an email to
-        <a href="mailto:sathvika.talari04@gmail.com" style="color: var(--cyan); font-weight:700;">sathvika.talari04@gmail.com</a>.</span>
+        <strong style="color:#10b981;">✓ Form Validated Successfully!</strong><br>
+        <span style="font-size:0.875rem; color: var(--ink-secondary);">All inputs are valid. <strong>Note: No message was sent or stored</strong> (client-side validation active). To connect directly with Sathvika, please email <a href="mailto:sathvika.talari04@gmail.com" style="color: var(--cyan); font-weight:700;">sathvika.talari04@gmail.com</a>.</span>
       `;
     } else {
       formFeedback.className = "alert mt-3";
