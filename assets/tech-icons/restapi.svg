@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="rest-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <!-- Fast API / REST Gateway -->
+  <rect x="4" y="10" width="56" height="44" rx="10" fill="#0f172a" stroke="#059669" stroke-width="2.5"/>
+  <path d="M14 24h12M14 32h20M14 40h14" stroke="#94a3b8" stroke-width="3" stroke-linecap="round"/>
+  <!-- Key / Token Lock badge -->
+  <circle cx="44" cy="32" r="10" fill="url(#rest-grad)"/>
+  <path d="M42 30v-2a2 2 0 1 1 4 0v2m-3 3h2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <rect x="40" y="30" width="8" height="6" rx="1.5" fill="#ffffff"/>
+</svg>

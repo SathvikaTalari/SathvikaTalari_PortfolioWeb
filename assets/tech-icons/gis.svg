@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gis-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <!-- Globe with Latitude / Longitude & Geo-Pin -->
+  <circle cx="32" cy="32" r="26" fill="#0f172a" stroke="url(#gis-grad)" stroke-width="2.5"/>
+  <ellipse cx="32" cy="32" rx="14" ry="26" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.6"/>
+  <line x1="6" y1="32" x2="58" y2="32" stroke="#38bdf8" stroke-width="1.8" opacity="0.6"/>
+  <!-- Map Pin Polygon -->
+  <path d="M32 14c-4.4 0-8 3.6-8 8 0 6 8 16 8 16s8-10 8-16c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" fill="#f59e0b"/>
+</svg>

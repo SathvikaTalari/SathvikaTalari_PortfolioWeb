@@ -5,15 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Sathvika Talari — Computer Science student in Hyderabad. Full-Stack & AI-ML Developer with experience in Python, Flask, Django, React, and Generative AI. 9.5 CGPA.">
-  <meta name="theme-color" content="#090d16">
+    content="Sathvika Talari — Computer Science Engineering Student in Hyderabad. Full-Stack Developer & AI-ML Enthusiast with hands-on experience in React.js, TypeScript, Python, Django, Node.js, REST APIs, and LightGBM predictive systems. 9.5 CGPA.">
+  <meta name="theme-color" content="#080d1a">
   <meta name="author" content="Sathvika Talari">
-  <title>Sathvika Talari · CS Student &amp; Full-Stack Developer</title>
+  <title>Sathvika Talari · CS Engineer &amp; Full-Stack / AI-ML Developer</title>
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Sathvika Talari · Portfolio">
+  <meta property="og:description"
+    content="Computer Science student with hands-on experience in full-stack development, REST APIs, databases, and AI-powered applications. 9.5 CGPA at Stanley College.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sathvikatalariportfolio.vercel.app">
 
   <link rel="icon" type="image/svg+xml" href="assets/portfolio-mark.svg">
   <link rel="stylesheet" href="vendor/bootstrap.min.css">
 
-  <!-- Devicon CDN for authentic programming language & tech logos -->
+  <!-- Devicon CDN for authentic programming languages & cloud logos -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <link rel="stylesheet" href="style.css">
@@ -26,301 +33,864 @@
   <!-- Accessible Skip Link -->
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- Scroll progress bar -->
+  <!-- Scroll Progress Indicator -->
   <div id="scroll-progress" role="progressbar" aria-label="Page scroll progress"></div>
 
-  <!-- Custom cursor -->
-  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
-  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
-
   <!-- ===================================================================
-       SITE HEADER & NAVIGATION
+       SITE HEADER & NAVIGATION (Unified Floating Island)
        =================================================================== -->
   <header class="site-header" id="site-header">
-    <nav class="navbar navbar-expand-xl container" aria-label="Main navigation">
-      <a class="navbar-brand brand" href="#home">
-        <img src="assets/portfolio-mark.svg" class="brand-monogram" width="40" height="40" alt="ST monogram">
-        <div class="brand-text">
-          <span class="brand-name">SATHVIKA TALARI</span>
-          <span class="brand-role">CS STUDENT · HYDERABAD</span>
+    <div class="container d-flex justify-content-center">
+      <nav class="navbar navbar-expand-xl nav-island" aria-label="Main navigation">
+        <!-- Mobile Brand (Visible only on mobile / collapsed views) -->
+        <a class="navbar-brand d-xl-none fw-bold font-mono text-cyan py-0 my-0 me-auto" href="#home"
+          style="font-size: 0.88rem; letter-spacing: 0.06em; text-decoration: none;">
+          SATHVIKA
+        </a>
+
+        <!-- Desktop Navigation Links (Always visible on desktop via flex override) -->
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item"><a class="nav-link active" href="#home">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-      </a>
 
-      <div class="d-flex align-items-center gap-2 ms-auto ms-xl-0 order-xl-last">
-        <button class="btn theme-button" id="theme-toggle" type="button" aria-pressed="true"
-          aria-label="Toggle light/dark theme" title="Toggle theme">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path
-              d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-          </svg>
-        </button>
+        <!-- Integrated Theme Toggle & Mobile Controls -->
+        <div class="nav-island-actions d-flex align-items-center">
+          <button class="btn theme-button" id="theme-toggle" type="button" aria-pressed="true"
+            aria-label="Toggle light/dark theme" title="Toggle theme">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" viewBox="0 0 16 16">
+              <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+            </svg>
+          </button>
 
-        <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer"
-          class="btn btn-outline-studio btn-sm d-none d-md-inline-flex" id="header-github-btn" title="GitHub Profile">
-          <i class="devicon-github-original" style="font-size: 1rem;"></i>
-          GitHub
-        </a>
-
-        <a href="assets/SathvikaTalari_Resume.pdf" download="SathvikaTalari_Resume.pdf"
-          class="btn btn-outline-studio btn-sm d-none d-sm-inline-flex" id="header-resume-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-          </svg>
-          Resume
-        </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-
-      <div class="collapse navbar-collapse" id="navigation">
-        <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+          <!-- Mobile Nav Toggler -->
+          <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- ===================================================================
+       MAIN CONTENT CONTAINER
+       =================================================================== -->
   <main id="main">
 
     <!-- ===================================================================
-         1. HERO SECTION
+         1. HERO / ABOUT START SECTION (Centered Bento Intro Card)
          =================================================================== -->
-    <section class="hero section" id="home" aria-labelledby="home-title">
-      <div class="hero-grid-bg" aria-hidden="true"></div>
-      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <section class="hero section bento-hero-section" id="home" aria-labelledby="home-title">
+      <!-- Invisible Anchor for #about links -->
+      <div id="about" style="position: absolute; top: -80px; left: 0; pointer-events: none;" aria-hidden="true"></div>
 
       <div class="container position-relative" style="z-index: 1;">
-        <div class="row g-5 align-items-center">
 
-          <!-- Left: Hero Text & CTAs -->
-          <div class="col-lg-6">
-            <div class="hero-availability reveal">
-              <span class="availability-dot" aria-hidden="true"></span>
-              AVAILABLE FOR FULL-STACK &amp; AI-ML ROLES
-            </div>
+        <!-- Centered Bento Hero Card (Exact Match to User Reference) -->
+        <div class="bento-hero-card reveal delay-100">
 
-            <h1 class="hero-title" id="home-title">
-              <span>Designing intelligent software,</span><br>
-              <span class="text-gradient">engineering robust web solutions.</span>
-            </h1>
-
-            <p class="hero-subtitle reveal delay-200">
-              I'm <strong>Sathvika Talari</strong>, a Computer Science student at Stanley College with experience in
-              Python development, Flask &amp; Django frameworks, React, and Generative AI integrations.
-            </p>
-
-            <!-- Typewriter -->
-            <div class="typewriter-wrap reveal delay-300" aria-live="polite">
-              <span class="typewriter-prefix">Specialized in</span>
-              <span id="typewriter-text"></span>
-              <span class="typewriter-cursor" aria-hidden="true"></span>
-            </div>
-
-            <!-- Action buttons -->
-            <div class="hero-actions reveal delay-400">
-              <a class="btn btn-primary" href="#projects" id="hero-projects-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-                Explore Projects (4)
-              </a>
-              <a class="btn btn-outline-studio" href="assets/SathvikaTalari_Resume.pdf"
-                download="SathvikaTalari_Resume.pdf" id="hero-resume-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                Download Resume
-              </a>
-            </div>
-
-            <!-- Stats strip -->
-            <div class="hero-stats reveal delay-500">
-              <div class="stat-item">
-                <div class="stat-value" data-target="9.5" data-decimals="1">9.5</div>
-                <div class="stat-label">CGPA / 10.0</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-value" data-target="4" data-decimals="0">4</div>
-                <div class="stat-label">Core Projects</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-value" data-target="1" data-decimals="0">#1</div>
-                <div class="stat-label">Ideathon Winner</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-value" data-target="3" data-decimals="0">3rd</div>
-                <div class="stat-label">GenAI Hackathon</div>
-              </div>
-            </div>
+          <!-- 1. Circular Avatar with Cosmic Halo -->
+          <div class="bento-avatar-wrap">
+            <img src="assets/sathvika-profile.jpg" alt="Sathvika Talari" class="bento-avatar-img" width="108" height="108">
           </div>
 
-          <!-- Right: Floating Code Card with Neon Badges -->
-          <div class="col-lg-6 d-none d-lg-flex justify-content-center">
-            <div class="hero-visual" style="width:100%; max-width:460px; position:relative;">
-              <div class="hero-card-float">
-                <div class="card-header-line">
-                  <div class="dot-red"></div>
-                  <div class="dot-yellow"></div>
-                  <div class="dot-green"></div>
-                  <span class="card-filename">sathvika_talari.py</span>
-                </div>
-                <div class="code-block" aria-hidden="true">
-                  <div class="code-line"><span class="code-ln">1</span><span><span class="code-keyword">class</span>
-                      <span class="code-func">SoftwareEngineer</span>:</span></div>
-                  <div class="code-line"><span class="code-ln">2</span><span>&nbsp;&nbsp;<span
-                        class="code-prop">name</span> <span class="code-comment">=</span> <span
-                        class="code-string">"Sathvika Talari"</span></span></div>
-                  <div class="code-line"><span class="code-ln">3</span><span>&nbsp;&nbsp;<span
-                        class="code-prop">github</span> <span class="code-comment">=</span> <span
-                        class="code-string">"SathvikaTalari"</span></span></div>
-                  <div class="code-line"><span class="code-ln">4</span><span>&nbsp;&nbsp;<span
-                        class="code-prop">location</span> <span class="code-comment">=</span> <span
-                        class="code-string">"Hyderabad, India 🇮🇳"</span></span></div>
-                  <div class="code-line"><span class="code-ln">5</span><span>&nbsp;&nbsp;<span
-                        class="code-prop">degree</span> <span class="code-comment">=</span> <span
-                        class="code-string">"B.Tech CSE (2023-2027)"</span></span></div>
-                  <div class="code-line"><span class="code-ln">6</span><span>&nbsp;&nbsp;<span
-                        class="code-prop">cgpa</span> <span class="code-comment">=</span> <span
-                        class="code-num">9.5</span></span></div>
-                  <div class="code-line"><span class="code-ln">7</span><span></span></div>
-                  <div class="code-line"><span class="code-ln">8</span><span>&nbsp;&nbsp;<span
-                        class="code-prop">experience</span> <span class="code-comment">=</span> {</span></div>
-                  <div class="code-line"><span class="code-ln">9</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
-                        class="code-string">"company"</span>: <span class="code-string">"Alonzo AI"</span>,</span></div>
-                  <div class="code-line"><span class="code-ln">10</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
-                        class="code-string">"role"</span>: <span class="code-string">"Web Dev Intern (AI-ML)"</span></span></div>
-                  <div class="code-line"><span class="code-ln">11</span><span>&nbsp;&nbsp;}</span></div>
-                  <div class="code-line"><span class="code-ln">12</span><span></span></div>
-                  <div class="code-line"><span class="code-ln">13</span><span>&nbsp;&nbsp;<span
-                        class="code-keyword">def</span> <span class="code-func">build_impact</span>(<span
-                        class="code-var">self</span>):</span></div>
-                  <div class="code-line"><span class="code-ln">14</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span
-                        class="code-keyword">return</span> <span class="code-string">"High performance &amp; clean code ✨"</span></span></div>
-                </div>
-              </div>
+          <!-- 2. Main Bold Headline with Soft Muted Punchline -->
+          <h1 class="bento-headline" id="home-title">
+            Hi, I'm Sathvika Talari — <span class="bento-headline-dim">I build full-stack web and AI applications that
+              solve real problems.</span>
+          </h1>
 
-              <!-- Floating badges -->
-              <div class="float-badge float-badge-1" aria-hidden="true">
-                <span class="badge-icon">⭐</span>
-                <span>9.5 CGPA · Stanley College</span>
-              </div>
-              <div class="float-badge float-badge-2" aria-hidden="true">
-                <img src="assets/alonzo-ai-logo.png" alt="Alonzo AI Logo" class="float-badge-logo">
-                <span>Alonzo AI · Full Stack &amp; AI-ML</span>
-              </div>
-            </div>
+          <!-- 4. Detailed About Profile Section -->
+          <div class="bento-bio" id="about-details">
+            <p>
+              I'm <strong>Sathvika Talari</strong>, a Computer Science undergraduate at <strong>Stanley College of
+                Engineering and Technology</strong> with a CGPA of <strong>9.5</strong>, passionate about building
+              impactful software products, full-stack applications, and AI-powered solutions.
+            </p>
+            <p>
+              I have hands-on experience as a <strong>Web Development Intern at Alonzo AI</strong> and a <strong>Python
+                Development Intern at VaultofCodes</strong>, working on backend development, API integration, database
+              operations, and application development. I have also participated in entrepreneurship and product
+              development training through <strong>WE Hub</strong>.
+            </p>
+            <p>
+              My technical interests include <strong>Frontend Development, Backend Engineering, and Artificial
+                Intelligence</strong>. I enjoy building practical applications using React, TypeScript, JavaScript,
+              Python, Flask, Node.js, and SQL.
+            </p>
+            <p>
+              Beyond development, I actively contribute to open source through <strong>GSSoC and Hacktoberfest</strong>.
+              I've also participated in hackathons, securing <strong>3rd place in the SmartBridge Generative AI
+                Hackathon</strong>, winning an Ideathon, and being selected for the <strong>Smart India Hackathon
+                internal round</strong>.
+            </p>
+            <p class="mb-0">
+              I'm a continuous learner who believes in building, experimenting, and solving real-world problems through
+              technology. I'm always open to meaningful collaborations, open-source contributions, and opportunities to
+              grow as a software developer.
+            </p>
+          </div>
+
+          <!-- Action Buttons Row -->
+          <div class="bento-buttons">
+            <button class="bento-btn bento-btn-secondary" id="hero-resume-btn" data-action="open-resume" type="button"
+              title="View Official Resume">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              <span>Resume</span>
+            </button>
+            <a href="#contact" class="bento-btn bento-btn-primary" id="hero-contact-btn"
+              title="Contact Sathvika Talari">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+              </svg>
+              <span>Get in touch</span>
+            </a>
+            <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer"
+              class="bento-btn bento-btn-secondary" id="hero-github-btn" title="GitHub Profile (@SathvikaTalari)">
+              <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/sathvika-talari-033093308" target="_blank" rel="noopener noreferrer"
+              class="bento-btn bento-btn-secondary" id="hero-linkedin-btn" title="LinkedIn Profile">
+              <svg fill="currentColor" viewBox="0 0 24 24" width="16" height="16">
+                <path
+                  d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
           </div>
 
         </div>
+
       </div>
     </section>
 
     <!-- ===================================================================
-         2. ABOUT SECTION
+         5. TECHNICAL SKILLS SECTION (Categorized with Authentic Devicons)
          =================================================================== -->
-    <section class="section section-alt" id="about" aria-labelledby="about-title">
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <div class="row g-5 align-items-start">
 
-          <div class="col-lg-4 reveal-left">
-            <span class="eyebrow">01 / About Me</span>
-            <h2 id="about-title">Applying technical knowledge to real-world challenges.</h2>
+        <div class="section-header-clean reveal mb-4">
+          <h2 class="section-title-clean" id="skills-title">Skills</h2>
+          <p class="section-subtitle-clean mb-3">Comprehensive toolkit across programming languages, web frameworks,
+            databases, and machine learning.</p>
+
+          <!-- Quick category selector -->
+          <div class="filter-bar" id="skills-filter-bar">
+            <button class="btn filter-btn active" type="button" data-skill-filter="all">All Skills</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="languages">Languages</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="web">Web &amp; Frameworks</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="databases">Databases</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="cloud">Cloud &amp; DevOps</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="ai">AI &amp; ML</button>
+            <button class="btn filter-btn" type="button" data-skill-filter="core">Core Concepts</button>
           </div>
-
-          <div class="col-lg-8 reveal-right">
-            <p class="about-statement">
-              Computer Science student with experience in <em>Python development</em>, web application design using
-              <em>Flask &amp; Django</em>, and modern frontend engineering with <em>React</em>.
-            </p>
-
-            <div class="about-body">
-              <p>
-                Currently pursuing a Bachelor's Degree in Computer Science at <strong>Stanley College of Engineering and
-                  Technology, Hyderabad</strong> with a <strong>9.5 CGPA</strong>. Skilled in problem solving,
-                full-stack software development, role-based access architectures, and collaborative project execution.
-              </p>
-              <p>
-                My background covers designing end-to-end applications: from an <strong>AI-powered learning platform
-                  (LearnSphere)</strong> with Generative AI assistance, to an <strong>Automata Simulator</strong>
-                parsing complex formal language conversions, to developing full-stack medical and hospitality management
-                portals.
-              </p>
-            </div>
-
-            <!-- Key Fact Cards -->
-            <div class="facts-grid">
-              <div class="fact-card reveal delay-100">
-                <strong class="counter" data-target="9.5" data-decimals="1">9.5</strong>
-                <span>Current Degree CGPA</span>
-              </div>
-              <div class="fact-card reveal delay-200">
-                <strong>2023 – 2027</strong>
-                <span>Stanley College, Hyd</span>
-              </div>
-              <div class="fact-card reveal delay-300">
-                <strong
-                  style="font-size:1.35rem; padding-top:6px; color: var(--cyan); -webkit-text-fill-color: initial;">Alonzo
-                  AI</strong>
-                <span>Web Dev Intern (AI-ML)</span>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+        <!-- Category 1: Languages -->
+        <div class="skill-category-block reveal" data-category="languages">
+          <h3 class="skill-category-title">
+            <span class="badge-num">01</span>
+            Programming Languages
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(49, 120, 198, 0.3); --logo-border: #3178c6;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/typescript.svg" alt="TypeScript Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-role">Type-Safe Systems &amp; React</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(247, 223, 30, 0.3); --logo-border: #f7df1e;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/javascript.svg" alt="JavaScript Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-role">ES6+, Asynchronous &amp; DOM</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(55, 118, 171, 0.3); --logo-border: #3776ab;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/python.svg" alt="Python Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <span class="skill-role">Django, Flask &amp; Machine Learning</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(234, 45, 46, 0.3); --logo-border: #ea2d2e;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/java.svg" alt="Java Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Java</span>
+                <span class="skill-role">OOP &amp; Core Data Structures</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(0, 89, 156, 0.3); --logo-border: #00599c;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/c.svg" alt="C Language Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">C Language</span>
+                <span class="skill-role">Systems Programming &amp; DSA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Web Development -->
+        <div class="skill-category-block reveal" data-category="web">
+          <h3 class="skill-category-title">
+            <span class="badge-num">02</span>
+            Web Development &amp; Architecture
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(97, 218, 251, 0.3); --logo-border: #61dafb;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/react.svg" alt="React.js Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+                <span class="skill-role">Hooks, State &amp; SPAs</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(104, 159, 99, 0.3); --logo-border: #689f63;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/nodejs.svg" alt="Node.js Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-role">Runtime &amp; Event Loop</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(255, 255, 255, 0.2); --logo-border: #ffffff;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/express.svg" alt="Express.js Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Express.js</span>
+                <span class="skill-role">RESTful API Architecture</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(56, 189, 248, 0.3); --logo-border: #38bdf8;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/tailwindcss.svg" alt="Tailwind CSS Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Tailwind CSS</span>
+                <span class="skill-role">Utility-First Modern UI</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(227, 79, 38, 0.3); --logo-border: #e34f26;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/html5-css3.svg" alt="HTML5 &amp; CSS3 Logo" class="skill-tech-icon skill-dual-icon" width="36" height="20" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">HTML5 &amp; CSS3</span>
+                <span class="skill-role">Semantic Web &amp; Responsive</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(5, 150, 105, 0.3); --logo-border: #059669;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/restapi.svg" alt="REST APIs &amp; JWT Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">REST APIs &amp; JWT/OAuth</span>
+                <span class="skill-role">Token Auth &amp; Microservices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Databases -->
+        <div class="skill-category-block reveal" data-category="databases">
+          <h3 class="skill-category-title">
+            <span class="badge-num">03</span>
+            Databases &amp; Storage
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(51, 103, 145, 0.3); --logo-border: #336791;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/postgresql.svg" alt="PostgreSQL Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-role">Relational DB &amp; Indexing</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(62, 207, 142, 0.3); --logo-border: #3ecf8e;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/supabase.svg" alt="Supabase Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Supabase</span>
+                <span class="skill-role">BaaS &amp; Real-time DB</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(71, 162, 72, 0.3); --logo-border: #47a248;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/mongodb.svg" alt="MongoDB Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">MongoDB</span>
+                <span class="skill-role">Document NoSQL DB</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(0, 117, 143, 0.3); --logo-border: #00758f;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/mysql.svg" alt="MySQL Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-role">Structured Query Language</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(0, 59, 87, 0.3); --logo-border: #003b57;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/sqlite.svg" alt="SQLite Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">SQLite</span>
+                <span class="skill-role">Lightweight Local Storage</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(255, 202, 40, 0.3); --logo-border: #ffca28;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/firebase.svg" alt="Firebase Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Firebase</span>
+                <span class="skill-role">Cloud Firestore &amp; Auth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 4: DevOps & Cloud -->
+        <div class="skill-category-block reveal" data-category="cloud">
+          <h3 class="skill-category-title">
+            <span class="badge-num">04</span>
+            DevOps, Cloud &amp; Tooling
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(36, 150, 237, 0.3); --logo-border: #2496ed;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/docker.svg" alt="Docker Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Docker</span>
+                <span class="skill-role">Containerization</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(50, 108, 229, 0.3); --logo-border: #326ce5;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/kubernetes.svg" alt="Kubernetes Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Kubernetes</span>
+                <span class="skill-role">Orchestration Basics</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(255, 153, 0, 0.3); --logo-border: #ff9900;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/aws.svg" alt="AWS Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">AWS</span>
+                <span class="skill-role">Cloud Compute &amp; Storage</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(240, 80, 50, 0.3); --logo-border: #f05032;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/git.svg" alt="Git Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Git &amp; GitHub</span>
+                <span class="skill-role">Version Control &amp; PRs</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(32, 136, 255, 0.3); --logo-border: #2088ff;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/githubactions.svg" alt="GitHub Actions Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">GitHub Actions</span>
+                <span class="skill-role">CI/CD Pipelines &amp; Workflows</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(255, 255, 255, 0.2); --logo-border: #94a3b8;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/vercel.svg" alt="Vercel Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Vercel &amp; Render</span>
+                <span class="skill-role">Production Deployment</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(254, 214, 0, 0.3); --logo-border: #fed600;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/linux.svg" alt="Linux Tux Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Linux</span>
+                <span class="skill-role">CLI, Bash &amp; Servers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 5: AI, ML & Core Concepts -->
+        <div class="skill-category-block reveal" data-category="ai">
+          <h3 class="skill-category-title">
+            <span class="badge-num">05</span>
+            AI, Machine Learning &amp; Core CS
+          </h3>
+          <div class="skills-logo-grid">
+            <div class="skill-logo-card" style="--logo-glow: rgba(16, 185, 129, 0.3); --logo-border: #10b981;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/lightgbm.svg" alt="LightGBM &amp; ML Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">LightGBM &amp; ML</span>
+                <span class="skill-role">Gradient Boosting &amp; Predictive</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(16, 163, 127, 0.3); --logo-border: #10a37f;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/openai.svg" alt="OpenAI Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">OpenAI API &amp; LLMs</span>
+                <span class="skill-role">Prompt Engineering &amp; GenAI</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(56, 189, 248, 0.3); --logo-border: #38bdf8;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/gemini.svg" alt="Google Gemini Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Gemini API</span>
+                <span class="skill-role">Multimodal AI Integration</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(245, 158, 11, 0.3); --logo-border: #f59e0b;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/gis.svg" alt="GIS &amp; PostGIS Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">GIS Mapping &amp; Spatial</span>
+                <span class="skill-role">Geospatial Risk Analytics</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(129, 140, 248, 0.3); --logo-border: #818cf8;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/shap.svg" alt="SHAP Explainable AI Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">Explainable AI (SHAP)</span>
+                <span class="skill-role">Feature Attribution &amp; Interpretability</span>
+              </div>
+            </div>
+
+            <div class="skill-logo-card" style="--logo-glow: rgba(56, 189, 248, 0.3); --logo-border: #38bdf8;">
+              <div class="skill-icon-wrap">
+                <img src="assets/tech-icons/dsa.svg" alt="DSA &amp; OOP Logo" class="skill-tech-icon" width="28" height="28" loading="lazy">
+              </div>
+              <div class="skill-info">
+                <span class="skill-name">DSA &amp; OOP</span>
+                <span class="skill-role">Algorithms, Data Structures &amp; DBMS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- ===================================================================
-         3. PROJECTS SECTION (All 4 Featured Projects from Resume)
+         2. EXPERIENCE SECTION (Clean Timeline & Cards)
          =================================================================== -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
       <div class="container">
 
-        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4 reveal">
-          <div>
-            <span class="eyebrow">02 / Featured Projects</span>
-            <h2 id="projects-title">Solutions engineered with precision.</h2>
-            <p class="section-intro mb-0">Explore interactive demos, live simulation sandboxes, and architectural case
-              studies.</p>
+        <!-- Experience Section Header -->
+        <div class="section-header-clean reveal mb-4">
+          <h2 class="section-title-clean" id="experience-title">Experience</h2>
+          <p class="section-subtitle-clean mb-3">Internships, open-source contributions, and software engineering roles.
+          </p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="exp-timeline-wrapper">
+          <!-- Continuous Spine Line -->
+          <div class="exp-timeline-spine" aria-hidden="true"></div>
+
+          <!-- Experience Entry 1: GirlScript Summer of Code -->
+          <div class="exp-timeline-entry reveal">
+            <!-- Company Logo Node -->
+            <div class="exp-logo-box" title="GirlScript Summer of Code">
+              <img src="assets/gssoc-logo.png" alt="GirlScript Summer of Code Logo" class="exp-logo-img" width="44"
+                height="44">
+            </div>
+
+            <!-- Details Card -->
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <h3 class="exp-role-title">Contributor</h3>
+                <span class="exp-date-text">May 2026 – Aug 2026</span>
+              </div>
+
+              <div class="exp-company-name">GirlScript Summer of Code</div>
+
+              <div class="exp-location">
+                <svg class="exp-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Remote</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Participated in the <strong>GirlScript Summer of Code</strong>, an open-source program dedicated
+                    to collaborative software development.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Identified and reported frontend, backend, and database issues to enhance application
+                    functionality.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Contributed to <strong>User Interface improvements</strong> and feature enhancements,
+                    strengthening overall application performance.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Collaborated effectively through <strong>GitHub Issues</strong> and <strong>Pull
+                      Requests</strong> to support code improvements.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Gained hands-on experience with <strong>full-stack debugging</strong>, issue tracking, version
+                    control, and collaborative open-source development.</span>
+                </li>
+              </ul>
+
+              <div class="exp-tags-row">
+                <span class="tag-item">HTML</span>
+                <span class="tag-item">CSS</span>
+                <span class="tag-item">JavaScript</span>
+                <span class="tag-item">React.js</span>
+                <span class="tag-item">MongoDB</span>
+                <span class="tag-item">Responsive Web Design</span>
+                <span class="tag-item">Git</span>
+                <span class="tag-item">GitHub</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Category filter buttons -->
-          <div class="filter-bar" role="group" aria-label="Filter projects by category">
-            <button class="btn filter-btn active" type="button" data-filter="all" aria-pressed="true"
-              id="filter-all">All Projects (4)</button>
-            <button class="btn filter-btn" type="button" data-filter="ai" aria-pressed="false" id="filter-ai">AI &amp;
-              ML</button>
-            <button class="btn filter-btn" type="button" data-filter="web" aria-pressed="false"
-              id="filter-web">Full-Stack Web</button>
-            <button class="btn filter-btn" type="button" data-filter="core" aria-pressed="false" id="filter-core">Core
-              CS &amp; Theory</button>
+          <!-- Experience Entry 2: Alonzo AI -->
+          <div class="exp-timeline-entry reveal delay-100">
+            <!-- Company Logo Node -->
+            <div class="exp-logo-box" title="Alonzo AI">
+              <img src="assets/alonzo-ai-logo.png" alt="Alonzo AI Logo" class="exp-logo-img" width="44" height="44">
+            </div>
+
+            <!-- Details Card -->
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <h3 class="exp-role-title">Full Stack Development Intern</h3>
+                <span class="exp-date-text">May 2026 – June 2026</span>
+              </div>
+
+              <div class="exp-company-name">Alonzo AI · Internship</div>
+
+              <div class="exp-location">
+                <svg class="exp-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Hyderabad, Telangana, India · On-site</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Developed frontend and backend features for a Medical Camp Management System supporting patient
+                    registration, medical inventory tracking, and operational reporting.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Implemented and integrated <strong>OCR-based patient information scanning</strong> and
+                    <strong>Exotel voice bot functionality</strong> to streamline data collection and patient
+                    communication.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Worked on backend logic, database workflows, and <strong>role-based access control
+                      (RBAC)</strong> to support secure access and reliable information management.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Debugged application issues and performed functional testing to validate workflows, improve
+                    reliability, and ensure consistent feature behavior.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Collaborated with the development team to build, integrate, and refine features for a real-world
+                    healthcare management application.</span>
+                </li>
+              </ul>
+
+              <div class="exp-tags-row">
+                <span class="tag-item">HTML</span>
+                <span class="tag-item">CSS</span>
+                <span class="tag-item">JavaScript</span>
+                <span class="tag-item">React.js</span>
+                <span class="tag-item">Django</span>
+                <span class="tag-item">Tailwind CSS</span>
+                <span class="tag-item">SQLite</span>
+                <span class="tag-item">Git</span>
+                <span class="tag-item">GitHub</span>
+                <span class="tag-item">Supabase</span>
+                <span class="tag-item">Testing</span>
+                <span class="tag-item">SDLC</span>
+                <span class="tag-item">Agile Methodologies</span>
+                <span class="tag-item">Docker</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Entry 3: VaultofCodes -->
+          <div class="exp-timeline-entry reveal delay-200">
+            <!-- Company Logo Node -->
+            <div class="exp-logo-box" title="VaultofCodes · Internship">
+              <img src="assets/vaultofcodes-logo.png" alt="VaultofCodes Logo" class="exp-logo-img" width="44"
+                height="44">
+            </div>
+
+            <!-- Details Card -->
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <h3 class="exp-role-title">Python Programming Intern</h3>
+                <span class="exp-date-text">May 2025 – June 2025</span>
+              </div>
+
+              <div class="exp-company-name">VaultofCodes · Internship</div>
+
+              <div class="exp-location">
+                <svg class="exp-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Remote</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Developed a <strong>Hotel Management System</strong> using <strong>Python</strong> and
+                    <strong>Flask</strong> to manage hotel operations.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Implemented backend functionality, application routes, and database interactions.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Built features to handle hotel management workflows and user requests.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Tested and debugged application components to ensure smooth functionality.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Strengthened practical skills in Python programming, Flask, backend development, and
+                    problem-solving.</span>
+                </li>
+              </ul>
+
+              <div class="exp-tags-row">
+                <span class="tag-item">HTML</span>
+                <span class="tag-item">CSS</span>
+                <span class="tag-item">JavaScript</span>
+                <span class="tag-item">Python</span>
+                <span class="tag-item">Flask</span>
+                <span class="tag-item">SQL</span>
+                <span class="tag-item">UI/UX</span>
+                <span class="tag-item">WebDesign</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Entry 4: WE HUB -->
+          <div class="exp-timeline-entry reveal delay-300">
+            <!-- Company Logo Node -->
+            <div class="exp-logo-box" title="WE Hub, A Government of Telangana Initiative">
+              <img src="assets/wehub-logo.png" alt="WE Hub Logo" class="exp-logo-img" width="44" height="44">
+            </div>
+
+            <!-- Details Card -->
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <h3 class="exp-role-title">Entrepreneurship Training</h3>
+                <span class="exp-date-text">May 2025 – Aug 2025</span>
+              </div>
+
+              <div class="exp-company-name">WE Hub, A Government of Telangana Initiative</div>
+
+              <div class="exp-location">
+                <svg class="exp-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Hyderabad, Telangana, India · On-site</span>
+              </div>
+
+              <ul class="exp-bullets">
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Completed comprehensive entrepreneurship and innovation training after winning an
+                    <strong>Ideathon competition</strong>.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Explored idea development, problem identification, and entrepreneurial approaches to solving
+                    real-world challenges.</span>
+                </li>
+                <li class="exp-bullet-item">
+                  <span class="exp-bullet-dot" aria-hidden="true">•</span>
+                  <span>Gained exposure to evaluating innovative concepts and communicating their potential
+                    impact.</span>
+                </li>
+              </ul>
+
+              <div class="exp-tags-row">
+                <span class="tag-item">Entrepreneurship</span>
+                <span class="tag-item">Business Development</span>
+                <span class="tag-item">Product Development</span>
+                <span class="tag-item">Idea Validation</span>
+                <span class="tag-item">Communication</span>
+                <span class="tag-item">Leadership</span>
+                <span class="tag-item">Product Development Lifecycle</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         3. FEATURED PROJECTS SECTION (Interactive Reference Showcase)
+         =================================================================== -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+
+        <!-- Projects Header (Exact Match to Reference Style) -->
+        <div class="projects-ref-header reveal text-center mb-4">
+          <h2 class="projects-ref-title" id="projects-title">Projects</h2>
+          <div class="projects-subtitle-wrapper">
+            <p class="projects-ref-subtitle">My projects and work across different technologies and domains.</p>
+          </div>
+
+          <!-- Centered Filter Tabs with Count Pills -->
+          <div class="projects-filter-bar" role="group" aria-label="Filter projects by category">
+            <button class="btn proj-filter-pill active" type="button" data-filter="all" aria-pressed="true"
+              id="filter-all">
+              <span>All</span> <span class="proj-filter-count">6</span>
+            </button>
+            <button class="btn proj-filter-pill" type="button" data-filter="ai" aria-pressed="false" id="filter-ai">
+              <span>AI &amp; ML</span> <span class="proj-filter-count">2</span>
+            </button>
+            <button class="btn proj-filter-pill" type="button" data-filter="web" aria-pressed="false" id="filter-web">
+              <span>Full-Stack Web</span> <span class="proj-filter-count">5</span>
+            </button>
+            <button class="btn proj-filter-pill" type="button" data-filter="core" aria-pressed="false" id="filter-core">
+              <span>EdTech &amp; Systems</span> <span class="proj-filter-count">3</span>
+            </button>
           </div>
         </div>
 
-        <p class="font-mono text-silver mb-4" id="project-count" style="font-size:0.8125rem" role="status"
-          aria-live="polite">4 projects shown</p>
+        <!-- Section List Sub-heading: All Projects (6 projects) -->
+        <div class="projects-subheading-bar mb-4 reveal">
+          <h3 class="projects-subheading-title" id="projects-subheading-title">
+            <span id="projects-list-category">All Projects</span> <span class="projects-subheading-count"
+              id="project-count">(Showing 2 of 6 projects)</span>
+          </h3>
+        </div>
 
-        <!-- Project grid (rendered dynamically with full details & live demo triggers) -->
+        <!-- Dynamic Project Grid (Rendered via JS matching the reference card design) -->
         <div class="row g-4" id="project-list"></div>
 
+        <!-- Toggle All Projects Button Wrapper -->
+        <div class="projects-toggle-wrapper text-center mt-3 mb-2" id="projects-toggle-container">
+          <button class="btn section-show-all-btn" id="btn-toggle-projects" type="button" aria-expanded="false"
+            aria-controls="project-list">
+            <span class="btn-toggle-text" id="projects-toggle-text">Show All Projects (6)</span>
+            <svg class="btn-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </div>
+
         <noscript>
-          <div class="alert alert-info mt-3">Enable JavaScript to explore project case studies and interactive
+          <div class="alert alert-info mt-3">Enable JavaScript to explore live project case studies and interactive
             demonstrations.</div>
         </noscript>
 
@@ -328,617 +898,537 @@
     </section>
 
     <!-- ===================================================================
-         4. WORK EXPERIENCE (Alonzo AI Spotlight)
+         6. EDUCATION SECTION (Simple Minimalist Style - Exact Match to Reference)
          =================================================================== -->
-    <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+    <section class="section" id="education" aria-labelledby="education-title">
       <div class="container">
-        <div class="row g-5">
+        <div class="education-simple-wrap">
+          <h2 class="education-simple-title reveal" id="education-title">Education</h2>
 
-          <div class="col-lg-4 reveal-left">
-            <span class="eyebrow">03 / Work Experience</span>
-            <h2 id="experience-title">Real-world engineering impact.</h2>
-            <p class="section-intro">Industry internship experience delivering scalable full-stack systems and automated
-              workflows.</p>
+          <div class="education-simple-list">
+
+            <!-- Entry 1: Stanley College of Engineering and Technology for Women -->
+            <div class="education-simple-item reveal">
+              <div class="education-simple-logo-box" title="Stanley College of Engineering and Technology for Women">
+                <img src="assets/stanley-logo.jpg" alt="Stanley College of Engineering and Technology for Women Logo"
+                  class="education-simple-logo-img" width="58" height="58">
+              </div>
+              <div class="education-simple-content">
+                <div class="education-simple-header">
+                  <h3 class="education-simple-institution">Stanley College of Engineering and Technology for Women</h3>
+                  <span class="education-simple-timeline" title="Sep 2023 – May 2027">2023 – 2027</span>
+                </div>
+                <p class="education-simple-degree">Bachelor of Technology (B.Tech) | Computer Science and Engineering
+                </p>
+                <p class="education-simple-score">9.5 CGPA</p>
+              </div>
+            </div>
+
+            <!-- Entry 2: Kendriya Vidhyalaya -->
+            <div class="education-simple-item reveal delay-100">
+              <div class="education-simple-logo-box" title="Kendriya Vidhyalaya">
+                <img src="assets/kendriya-vidyalaya-logo.jpg" alt="Kendriya Vidhyalaya Logo"
+                  class="education-simple-logo-img" width="58" height="58">
+              </div>
+              <div class="education-simple-content">
+                <div class="education-simple-header">
+                  <h3 class="education-simple-institution">Kendriya Vidhyalaya</h3>
+                  <span class="education-simple-timeline">2021 – 2023</span>
+                </div>
+                <p class="education-simple-degree">12th standard (CBSE Board) | PCM</p>
+                <p class="education-simple-score">75%</p>
+              </div>
+            </div>
+
+            <!-- Entry 3: Kids Kingdom Public School -->
+            <div class="education-simple-item reveal delay-200">
+              <div class="education-simple-logo-box" title="Kids Kingdom Public School">
+                <img src="assets/kids-kingdom-logo.jpg" alt="Kids Kingdom Public School Logo"
+                  class="education-simple-logo-img" width="58" height="58">
+              </div>
+              <div class="education-simple-content">
+                <div class="education-simple-header">
+                  <h3 class="education-simple-institution">Kids Kingdom Public School</h3>
+                  <span class="education-simple-timeline">2020 – 2021</span>
+                </div>
+                <p class="education-simple-degree">10th standard (CBSE Board)</p>
+                <p class="education-simple-score">75%</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. ACHIEVEMENTS SECTION
+         =================================================================== -->
+    <section class="section section-alt" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+
+        <!-- Achievements Section Heading (Exact Match to Reference) -->
+        <div class="achievements-header reveal mb-5">
+          <h2 class="achievements-title" id="achievements-title">Achievements</h2>
+          <p class="achievements-subtitle">Milestones that reflect my consistency, competitive spirit, and commitment to
+            engineering excellence.</p>
+        </div>
+
+        <!-- 2x2 Achievements Cards Grid -->
+        <div class="row g-4">
+          <!-- Card 1: SmartBridge Gen AI Hackathon – 3rd Place -->
+          <div class="col-lg-6 reveal">
+            <div class="achieve-card">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-box" title="SmartBridge">
+                  <img src="assets/smartbridge-logo.png" alt="SmartBridge Logo" class="achieve-logo-img" width="40"
+                    height="40">
+                </div>
+                <div class="achieve-meta-wrap">
+                  <h3 class="achieve-name">SmartBridge Gen AI Hackathon – 3rd Place</h3>
+                  <span class="achieve-year">2026</span>
+                </div>
+              </div>
+              <p class="achieve-desc">Secured 3rd place in the national Gen AI Hackathon conducted by SmartBridge,
+                architecting practical Generative AI applications with real-time prompt workflows and API integrations.
+              </p>
+            </div>
           </div>
 
-          <div class="col-lg-8 reveal-right">
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="timeline-dot" aria-hidden="true"></div>
+          <!-- Card 2: WE HUB Ideathon Competition – Winner -->
+          <div class="col-lg-6 reveal delay-100">
+            <div class="achieve-card">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-box" title="WE Hub, A Government of Telangana Initiative">
+                  <img src="assets/wehub-logo.png" alt="WE Hub Logo" class="achieve-logo-img" width="40" height="40">
+                </div>
+                <div class="achieve-meta-wrap">
+                  <h3 class="achieve-name">WE HUB Ideathon Competition – Winner</h3>
+                  <span class="achieve-year">2024</span>
+                </div>
+              </div>
+              <p class="achieve-desc">Winner of the Ideathon Competition, receiving sponsored comprehensive
+                entrepreneurship, idea validation, and product development training at WE-Hub Headquarters, Hyderabad.
+              </p>
+            </div>
+          </div>
 
-                <div class="timeline-card">
-                  <div class="timeline-date">
-                    <span>MAY 2026 – JUNE 2026</span>
-                    <span class="timeline-badge">INDUSTRY INTERNSHIP</span>
-                  </div>
+          <!-- Card 3: Smart India Hackathon (SIH) – Internal Qualifier -->
+          <div class="col-lg-6 reveal delay-200">
+            <div class="achieve-card">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-box" title="Smart India Hackathon (SIH)">
+                  <img src="assets/sih-logo.png" alt="Smart India Hackathon Logo" class="achieve-logo-img" width="40"
+                    height="40">
+                </div>
+                <div class="achieve-meta-wrap">
+                  <h3 class="achieve-name">Smart India Hackathon (SIH) – Qualifier</h3>
+                  <span class="achieve-year">2025</span>
+                </div>
+              </div>
+              <p class="achieve-desc">Selected for the competitive Internal Round of Smart India Hackathon (SIH),
+                designing scalable software solutions addressing high-impact nationwide problem statements.</p>
+            </div>
+          </div>
 
-                  <div class="d-flex align-items-center gap-3 mb-3">
-                    <img src="assets/alonzo-ai-logo.png" alt="Alonzo AI Logo" class="experience-company-logo" width="64" height="64">
-                    <div>
-                      <h3 class="timeline-company mb-0">Alonzo AI</h3>
-                      <span class="text-silver font-mono" style="font-size:0.78rem; letter-spacing:0.04em;">Bespoke AI Solutions</span>
-                    </div>
-                  </div>
-                  <div class="timeline-role">
-                    Web Development Intern — Medical Camp Management System — Full Stack and AI-ML
-                  </div>
+          <!-- Card 4: GirlScript Summer of Code – Contributor -->
+          <div class="col-lg-6 reveal delay-300">
+            <div class="achieve-card">
+              <div class="achieve-card-header">
+                <div class="achieve-icon-box" title="GirlScript Summer of Code">
+                  <img src="assets/gssoc-logo.png" alt="GirlScript Summer of Code Logo" class="achieve-logo-img"
+                    width="40" height="40">
+                </div>
+                <div class="achieve-meta-wrap">
+                  <h3 class="achieve-name">GirlScript Summer of Code – Contributor</h3>
+                  <span class="achieve-year">2026</span>
+                </div>
+              </div>
+              <p class="achieve-desc">Selected contributor for GSSoC, contributing full-stack debugging, responsive UI
+                enhancements, and collaborative code improvements through GitHub pull requests.</p>
+            </div>
+          </div>
+        </div>
 
-                  <ul class="timeline-bullets">
-                    <li>Developed a full-stack solution using React JS, Django and SQLite3 to automate patient
-                      registration, medical inventory tracking, reporting for medical camps, and real-time stock
-                      monitoring.</li>
-                    <li>Implemented secure role-based access control (RBAC) and optimized database management while
-                      actively debugging and maintaining system stability to ensure reliable camp operations.</li>
-                    <li>Streamlined on-ground medical data collection with real-time reporting dashboards for doctors,
-                      camp organizers, and administrative staff.</li>
-                  </ul>
 
-                  <div class="d-flex flex-wrap gap-2 mt-3">
-                    <span class="tag-item">React JS</span>
-                    <span class="tag-item">Django</span>
-                    <span class="tag-item">SQLite3</span>
-                    <span class="tag-item">Full Stack</span>
-                    <span class="tag-item">AI-ML Integration</span>
-                    <span class="tag-item">Role-Based Access Control</span>
-                    <span class="tag-item">Real-Time Inventory</span>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. CERTIFICATIONS SECTION (Verifiable Industry Credentials)
+         =================================================================== -->
+    <section class="section" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+
+        <div class="section-header-clean mb-4 reveal">
+          <h2 class="section-title-clean" id="certifications-title">Certifications</h2>
+          <p class="section-subtitle-clean">Credentials I have earned along the way. Each of this is verifiable.</p>
+        </div>
+
+        <div class="certifications-list" id="certifications-list">
+
+          <!-- Certification 1: SQL (Basic) Certificate - HackerRank -->
+          <div class="cert-item-card reveal">
+            <!-- Left Thumbnail Preview -->
+            <div class="cert-item-thumb-box cert-thumb-trigger" data-cert-img="assets/cert-hackerrank-sql.jpg"
+              data-cert-title="SQL (Basic) Certificate – HackerRank" title="Click to view full certificate">
+              <img src="assets/cert-hackerrank-sql.jpg" alt="SQL (Basic) Certificate preview"
+                class="cert-item-thumb-img" loading="lazy">
+              <div class="cert-thumb-overlay" aria-hidden="true">
+                <span class="cert-thumb-zoom-badge">🔍 Expand</span>
+              </div>
+            </div>
+
+            <!-- Right Details -->
+            <div class="cert-item-details">
+              <div class="cert-item-header">
+                <div class="cert-issuer-avatar cert-issuer-hackerrank" title="HackerRank">
+                  <img src="assets/hackerrank-icon.png" alt="HackerRank Logo" class="cert-issuer-img" loading="lazy">
+                </div>
+                <div>
+                  <h3 class="cert-item-title">SQL (Basic) Certificate</h3>
+                  <div class="cert-item-meta">
+                    <span class="cert-item-issuer">HackerRank</span>
+                    <span class="cert-item-dot">·</span>
+                    <span class="cert-item-date">Issued Nov 2026</span>
                   </div>
                 </div>
               </div>
+
+              <p class="cert-item-desc">
+                Timed skill assessment covering SQL queries, data filtering, aggregations, joins, and relational
+                database management against a live database.
+              </p>
+
+              <div class="cert-item-id-row">
+                <span class="cert-item-id-label">Credential ID:</span>
+                <span class="cert-item-id-val">84bc68e60351</span>
+              </div>
+
+              <div class="cert-item-skills">
+                <span class="cert-skill-pill">SQL</span>
+                <span class="cert-skill-pill">MySQL</span>
+                <span class="cert-skill-pill">Databases</span>
+                <span class="cert-skill-pill">Query Optimisation</span>
+                <span class="cert-skill-pill">DBMS</span>
+              </div>
+
+              <div class="cert-item-actions">
+                <a href="https://www.hackerrank.com/certificates/84bc68e60351" target="_blank" rel="noopener noreferrer"
+                  class="cert-link-btn">
+                  Verify credential →
+                </a>
+                <button type="button" class="cert-link-btn cert-view-modal-btn"
+                  data-cert-img="assets/cert-hackerrank-sql.jpg" data-cert-title="SQL (Basic) Certificate – HackerRank">
+                  View certificate →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 2: Learning Git and GitHub - LinkedIn Learning -->
+          <div class="cert-item-card reveal delay-100">
+            <!-- Left Thumbnail Preview -->
+            <div class="cert-item-thumb-box cert-thumb-trigger" data-cert-img="assets/cert-linkedin-git.png"
+              data-cert-title="Learning Git and GitHub – LinkedIn Learning" title="Click to view full certificate">
+              <img src="assets/cert-linkedin-git.png" alt="Learning Git and GitHub Certificate preview"
+                class="cert-item-thumb-img" loading="lazy">
+              <div class="cert-thumb-overlay" aria-hidden="true">
+                <span class="cert-thumb-zoom-badge">🔍 Expand</span>
+              </div>
+            </div>
+
+            <!-- Right Details -->
+            <div class="cert-item-details">
+              <div class="cert-item-header">
+                <div class="cert-issuer-avatar cert-issuer-linkedin" title="LinkedIn Learning">
+                  <img src="assets/linkedin-icon.png" alt="LinkedIn Logo" class="cert-issuer-img" loading="lazy">
+                </div>
+                <div>
+                  <h3 class="cert-item-title">Learning Git and GitHub</h3>
+                  <div class="cert-item-meta">
+                    <span class="cert-item-issuer">LinkedIn Learning</span>
+                    <span class="cert-item-dot">·</span>
+                    <span class="cert-item-date">Issued Nov 2026</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="cert-item-desc">
+                Course completed by Sathvika Talari covering Git version control, GitHub repositories, branching
+                strategies, commit history management, and collaborative pull requests.
+              </p>
+
+              <div class="cert-item-id-row">
+                <span class="cert-item-id-label">Credential ID:</span>
+                <span class="cert-item-id-val">9c0d52c610bd485c040c799ebcc01f6c6ad95f5daee5eaf7fde91cf701506931</span>
+              </div>
+
+              <div class="cert-item-skills">
+                <span class="cert-skill-pill">Git</span>
+                <span class="cert-skill-pill">GitHub</span>
+                <span class="cert-skill-pill">Version Control</span>
+                <span class="cert-skill-pill">Code Collaboration</span>
+              </div>
+
+              <div class="cert-item-actions">
+                <a href="https://www.linkedin.com/learning/certificates/9c0d52c610bd485c040c799ebcc01f6c6ad95f5daee5eaf7fde91cf701506931"
+                  target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                  Verify credential →
+                </a>
+                <button type="button" class="cert-link-btn cert-view-modal-btn"
+                  data-cert-img="assets/cert-linkedin-git.png"
+                  data-cert-title="Learning Git and GitHub – LinkedIn Learning">
+                  View certificate →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 3: The Complete Full-Stack Web Development Bootcamp - Udemy -->
+          <div class="cert-item-card cert-extra-card reveal delay-200">
+            <!-- Left Thumbnail Preview -->
+            <div class="cert-item-thumb-box cert-thumb-trigger" data-cert-img="assets/cert-udemy-fullstack.jpg"
+              data-cert-title="The Complete Full-Stack Web Development Bootcamp – Udemy"
+              title="Click to view full certificate">
+              <img src="assets/cert-udemy-fullstack.jpg"
+                alt="The Complete Full-Stack Web Development Bootcamp Certificate preview" class="cert-item-thumb-img"
+                loading="lazy">
+              <div class="cert-thumb-overlay" aria-hidden="true">
+                <span class="cert-thumb-zoom-badge">🔍 Expand</span>
+              </div>
+            </div>
+
+            <!-- Right Details -->
+            <div class="cert-item-details">
+              <div class="cert-item-header">
+                <div class="cert-issuer-avatar cert-issuer-udemy" title="Udemy">
+                  <img src="assets/udemy-icon.png" alt="Udemy Logo" class="cert-issuer-img" loading="lazy">
+                </div>
+                <div>
+                  <h3 class="cert-item-title">The Complete Full-Stack Web Development Bootcamp</h3>
+                  <div class="cert-item-meta">
+                    <span class="cert-item-issuer">Udemy</span>
+                    <span class="cert-item-dot">·</span>
+                    <span class="cert-item-date">Issued Nov 2026 · 62 total hours</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="cert-item-desc">
+                Comprehensive 62-hour full-stack engineering program covering HTML5, CSS3, JavaScript, Node.js, Express,
+                PostgreSQL, REST APIs, authentication, and modern front-end integration. Instructed by Dr. Angela Yu.
+              </p>
+
+              <div class="cert-item-id-row">
+                <span class="cert-item-id-label">Credential ID:</span>
+                <span class="cert-item-id-val">UC-58999454-fbca-425e-ab76-6339a66ac033</span>
+              </div>
+
+              <div class="cert-item-skills">
+                <span class="cert-skill-pill">Full-Stack Development</span>
+                <span class="cert-skill-pill">HTML5</span>
+                <span class="cert-skill-pill">CSS3</span>
+                <span class="cert-skill-pill">JavaScript</span>
+                <span class="cert-skill-pill">Node.js</span>
+                <span class="cert-skill-pill">Express.js</span>
+                <span class="cert-skill-pill">PostgreSQL</span>
+                <span class="cert-skill-pill">REST APIs</span>
+              </div>
+
+              <div class="cert-item-actions">
+                <a href="https://www.udemy.com/certificate/UC-58999454-fbca-425e-ab76-6339a66ac033/" target="_blank"
+                  rel="noopener noreferrer" class="cert-link-btn">
+                  Verify credential →
+                </a>
+                <button type="button" class="cert-link-btn cert-view-modal-btn"
+                  data-cert-img="assets/cert-udemy-fullstack.jpg"
+                  data-cert-title="The Complete Full-Stack Web Development Bootcamp – Udemy">
+                  View certificate →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification 4: SQL and Python Programming - Meraudi Education Mart -->
+          <div class="cert-item-card cert-extra-card reveal delay-300">
+            <!-- Left Thumbnail Preview -->
+            <div class="cert-item-thumb-box cert-thumb-trigger" data-cert-img="assets/cert-meraudi-sql-python.jpg"
+              data-cert-title="SQL and Python Programming – Meraudi Education Mart"
+              title="Click to view full certificate">
+              <img src="assets/cert-meraudi-sql-python.jpg" alt="SQL and Python Programming Certificate preview"
+                class="cert-item-thumb-img" loading="lazy">
+              <div class="cert-thumb-overlay" aria-hidden="true">
+                <span class="cert-thumb-zoom-badge">🔍 Expand</span>
+              </div>
+            </div>
+
+            <!-- Right Details -->
+            <div class="cert-item-details">
+              <div class="cert-item-header">
+                <div class="cert-issuer-avatar cert-issuer-meraudi" title="Meraudi Education Mart">
+                  <img src="assets/meraudi-icon.png" alt="Meraudi Education Mart Logo" class="cert-issuer-img"
+                    loading="lazy">
+                </div>
+                <div>
+                  <h3 class="cert-item-title">SQL and Python Programming</h3>
+                  <div class="cert-item-meta">
+                    <span class="cert-item-issuer">Meraudi Education Mart</span>
+                    <span class="cert-item-dot">·</span>
+                    <span class="cert-item-date">Issued May 2022 · A Grade Level</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="cert-item-desc">
+                Foundational engineering certification in SQL database architecture, relational querying, and Python
+                programming fundamentals, evaluated and awarded at A Grade Level under ISO 9001:2005 quality standards.
+              </p>
+
+              <div class="cert-item-id-row">
+                <span class="cert-item-id-label">Accreditation:</span>
+                <span class="cert-item-id-val">ISO 9001:2005 Certified Course · A Grade Level</span>
+              </div>
+
+              <div class="cert-item-skills">
+                <span class="cert-skill-pill">SQL</span>
+                <span class="cert-skill-pill">Python</span>
+                <span class="cert-skill-pill">Relational Databases</span>
+                <span class="cert-skill-pill">Database Management</span>
+                <span class="cert-skill-pill">Programming Fundamentals</span>
+              </div>
+
+              <div class="cert-item-actions">
+                <button type="button" class="cert-link-btn cert-view-modal-btn"
+                  data-cert-img="assets/cert-meraudi-sql-python.jpg"
+                  data-cert-title="SQL and Python Programming – Meraudi Education Mart">
+                  View certificate →
+                </button>
+                <a href="assets/cert-meraudi-sql-python.jpg" target="_blank" rel="noopener noreferrer"
+                  class="cert-link-btn" title="Open high-resolution certificate image">
+                  Open full resolution ↗
+                </a>
+              </div>
             </div>
           </div>
 
         </div>
-      </div>
-    </section>
 
-    <!-- ===================================================================
-         5. SKILLS SECTION (With Real Language Logos)
-         =================================================================== -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="container">
-
-        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5 reveal">
-          <div>
-            <span class="eyebrow">04 / Technical Toolkit</span>
-            <h2 id="skills-title">Skills &amp; Technologies.</h2>
-            <p class="section-intro mb-0">Verified programming languages, web stacks, frameworks, and developer tools
-              with authentic logos.</p>
-          </div>
-
-          <!-- Quick category selector -->
-          <div class="filter-bar" id="skills-filter-bar">
-            <button class="btn filter-btn active" type="button" data-skill-filter="all">All Skills</button>
-            <button class="btn filter-btn" type="button" data-skill-filter="languages">Languages</button>
-            <button class="btn filter-btn" type="button" data-skill-filter="web">Web &amp; Frameworks</button>
-            <button class="btn filter-btn" type="button" data-skill-filter="tools">Databases &amp; Tools</button>
-          </div>
-        </div>
-
-        <!-- 1. Programming Languages -->
-        <div class="skill-category-block reveal" data-category="languages">
-          <h3 class="skill-category-title">
-            <span class="badge-num">01</span>
-            Programming Languages
-          </h3>
-          <div class="skills-logo-grid">
-            <div class="skill-logo-card"
-              style="--logo-glow: rgba(55, 118, 171, 0.3); --logo-border: #3776ab; --logo-shadow: rgba(55, 118, 171, 0.4);">
-              <div class="skill-icon-wrap">
-                <i class="devicon-python-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">Python</span>
-                <span class="skill-role">Flask, Django &amp; AI-ML</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card"
-              style="--logo-glow: rgba(234, 45, 46, 0.3); --logo-border: #ea2d2e; --logo-shadow: rgba(234, 45, 46, 0.4);">
-              <div class="skill-icon-wrap">
-                <i class="devicon-java-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">Java</span>
-                <span class="skill-role">OOP &amp; Core Systems</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card"
-              style="--logo-glow: rgba(247, 223, 30, 0.3); --logo-border: #f7df1e; --logo-shadow: rgba(247, 223, 30, 0.4);">
-              <div class="skill-icon-wrap">
-                <i class="devicon-javascript-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-role">ES6+, DOM &amp; Front-End</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card"
-              style="--logo-glow: rgba(0, 89, 156, 0.3); --logo-border: #00599c; --logo-shadow: rgba(0, 89, 156, 0.4);">
-              <div class="skill-icon-wrap">
-                <i class="devicon-c-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">C Language</span>
-                <span class="skill-role">Data Structures &amp; DSA</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 2. Web Technologies -->
-        <div class="skill-category-block reveal" data-category="web">
-          <h3 class="skill-category-title">
-            <span class="badge-num">02</span>
-            Web Technologies
-          </h3>
-          <div class="skills-logo-grid">
-            <div class="skill-logo-card" style="--logo-glow: rgba(227, 79, 38, 0.3); --logo-border: #e34f26;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-html5-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">HTML5</span>
-                <span class="skill-role">Semantic Web &amp; SEO</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(21, 114, 182, 0.3); --logo-border: #1572b6;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-css3-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">CSS3</span>
-                <span class="skill-role">Modern Layouts &amp; Animation</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(121, 82, 179, 0.3); --logo-border: #7952b3;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-bootstrap-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">Bootstrap</span>
-                <span class="skill-role">Responsive UI Framework</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(104, 159, 99, 0.3); --logo-border: #689f63;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-nodejs-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">NodeJS</span>
-                <span class="skill-role">Runtime &amp; Express APIs</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(119, 123, 179, 0.3); --logo-border: #777bb3;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-php-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">PHP</span>
-                <span class="skill-role">Server Scripting</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3. Frameworks -->
-        <div class="skill-category-block reveal" data-category="web">
-          <h3 class="skill-category-title">
-            <span class="badge-num">03</span>
-            Frameworks
-          </h3>
-          <div class="skills-logo-grid">
-            <div class="skill-logo-card" style="--logo-glow: rgba(56, 189, 248, 0.25); --logo-border: var(--cyan);">
-              <div class="skill-icon-wrap">
-                <i class="devicon-flask-original" style="color: var(--cyan);"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">Flask</span>
-                <span class="skill-role">REST APIs &amp; App Routing</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(97, 218, 251, 0.3); --logo-border: #61dafb;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-react-original colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">React JS</span>
-                <span class="skill-role">Component Architecture</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(255, 75, 75, 0.3); --logo-border: #ff4b4b;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-streamlit-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">Streamlit</span>
-                <span class="skill-role">ML &amp; Data Prototyping</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(226, 53, 47, 0.3); --logo-border: #e2352f;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-angularjs-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">AngularJS</span>
-                <span class="skill-role">Single-Page Architecture</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Databases & Developer Tools -->
-        <div class="skill-category-block reveal" data-category="tools">
-          <h3 class="skill-category-title">
-            <span class="badge-num">04</span>
-            Databases &amp; Developer Tools
-          </h3>
-          <div class="skills-logo-grid">
-            <div class="skill-logo-card" style="--logo-glow: rgba(0, 117, 143, 0.3); --logo-border: #00758f;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-mysql-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">MySQL</span>
-                <span class="skill-role">Relational DB &amp; Queries</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(0, 59, 87, 0.3); --logo-border: #003b57;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-sqlite-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">SQLite</span>
-                <span class="skill-role">Lightweight Local DB</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(240, 80, 50, 0.3); --logo-border: #f05032;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-git-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">Git</span>
-                <span class="skill-role">Version Control</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(255, 255, 255, 0.2); --logo-border: #94a3c0;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-github-original" style="color: var(--ink-primary);"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">GitHub</span>
-                <span class="skill-role">Collaboration &amp; CI/CD</span>
-              </div>
-            </div>
-
-            <div class="skill-logo-card" style="--logo-glow: rgba(0, 122, 204, 0.3); --logo-border: #007acc;">
-              <div class="skill-icon-wrap">
-                <i class="devicon-vscode-plain colored"></i>
-              </div>
-              <div class="skill-info">
-                <span class="skill-name">VS Code</span>
-                <span class="skill-role">Primary IDE &amp; Debugging</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Areas of Interest -->
-        <div class="skill-category-block reveal" data-category="tools">
-          <h3 class="skill-category-title">
-            <span class="badge-num">05</span>
-            Areas of Interest
-          </h3>
-          <div class="row g-3">
-            <div class="col-md-3 col-sm-6">
-              <div class="interest-card">
-                <span class="interest-icon">🤖</span>
-                <div class="interest-title">AI &amp; ML</div>
-                <p class="interest-desc">Generative AI APIs, LLM integration, intelligent tutoring platforms &amp;
-                  automation.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="interest-card">
-                <span class="interest-icon">🌐</span>
-                <div class="interest-title">Web Development</div>
-                <p class="interest-desc">Full-stack Python &amp; JavaScript apps, RESTful APIs, role-based dashboards.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="interest-card">
-                <span class="interest-icon">⚡</span>
-                <div class="interest-title">Web3</div>
-                <p class="interest-desc">Decentralized protocols, smart contracts, and emerging distributed systems.</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="interest-card">
-                <span class="interest-icon">🏆</span>
-                <div class="interest-title">Competitive Coding</div>
-                <p class="interest-desc">Data structures, algorithmic problem solving, hackathons &amp; optimization.
-                </p>
-              </div>
-            </div>
-          </div>
+        <!-- Toggle All Certifications Button Wrapper -->
+        <div class="certifications-toggle-wrapper text-center mt-4" id="certs-toggle-container">
+          <button class="btn section-show-all-btn" id="btn-toggle-certs" type="button" aria-expanded="false"
+            aria-controls="certifications-list">
+            <span class="btn-toggle-text" id="certs-toggle-text">Show All Certifications (4)</span>
+            <svg class="btn-toggle-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
         </div>
 
       </div>
     </section>
 
     <!-- ===================================================================
-         6. EDUCATION SECTION
+         9. CONTACT SECTION (With 1-Click Copy & Interactive Form)
          =================================================================== -->
-    <section class="section section-alt" id="education" aria-labelledby="education-title">
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
       <div class="container">
-        <div class="row g-5">
-
-          <div class="col-lg-4 reveal-left">
-            <span class="eyebrow">05 / Education</span>
-            <h2 id="education-title">Academic excellence.</h2>
-            <p class="section-intro">Consistently high performance across engineering degree and secondary education.
-            </p>
-          </div>
-
-          <div class="col-lg-8 reveal-right">
-
-            <!-- Bachelor's Degree Panel -->
-            <div class="degree-panel">
-              <div>
-                <p class="degree-years">2023 – 2027 · CURRENT DEGREE</p>
-                <h3 class="degree-title">Bachelor of Technology · Computer Science</h3>
-                <p class="degree-institution">Stanley College of Engineering and Technology, Hyderabad</p>
-              </div>
-              <div class="cgpa-badge">
-                <span class="cgpa-value counter" data-target="9.5" data-decimals="1">9.5</span>
-                <span class="cgpa-label">CURRENT CGPA</span>
-              </div>
-            </div>
-
-            <!-- CBSE Board Records Table -->
-            <div class="education-table-wrap">
-              <div class="table-responsive">
-                <table class="table education-table" aria-label="CBSE Board Education Records">
-                  <caption>School Education · CBSE Board</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col">Qualification</th>
-                      <th scope="col">Year</th>
-                      <th scope="col">Board</th>
-                      <th scope="col" class="text-end">Grade / Score</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Class 12th Senior Secondary</th>
-                      <td class="font-mono">2022 – 2023</td>
-                      <td>CBSE Board</td>
-                      <td class="text-end font-mono text-cyan fw-bold">7.5</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Class 10th Secondary School</th>
-                      <td class="font-mono">2021</td>
-                      <td>CBSE Board</td>
-                      <td class="text-end font-mono text-cyan fw-bold">7.5</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================================
-         7. ACHIEVEMENTS & CERTIFICATIONS SECTION
-         =================================================================== -->
-    <section class="section" id="achievements" aria-labelledby="achievements-title">
-      <div class="container">
-
-        <div class="section-heading mb-5 reveal">
-          <span class="eyebrow">06 / Achievements &amp; Certifications</span>
-          <h2 id="achievements-title">Honors &amp; verified credentials.</h2>
-          <p class="section-intro">Recognition in competitive hackathons, entrepreneurship training, and specialized
-            development courses.</p>
+        <div class="section-header-clean reveal mb-4">
+          <h2 class="section-title-clean" id="contact-title">Contact</h2>
+          <p class="section-subtitle-clean">Interested in hiring, collaborating on full-stack or AI-powered engineering
+            projects, or discussing opportunities? Reach out directly.</p>
         </div>
 
-        <!-- Achievements Grid -->
-        <h3 class="mb-3 font-mono text-cyan" style="font-size: 1.1rem; letter-spacing: 0.04em;">🏆 KEY ACHIEVEMENTS</h3>
-        <div class="row g-4 mb-5">
-          <div class="col-md-4 reveal delay-100">
-            <div class="achievement-card">
-              <span class="achievement-icon" aria-hidden="true">🥉</span>
-              <div>
-                <div class="achievement-title">3rd Place — Gen AI Hackathon</div>
-                <div class="achievement-meta">Conducted by SmartBridge · Awarded for innovative Generative AI
-                  application engineering.</div>
-              </div>
-            </div>
-          </div>
+        <div class="row g-4 align-items-stretch">
 
-          <div class="col-md-4 reveal delay-200">
-            <div class="achievement-card">
-              <span class="achievement-icon" aria-hidden="true">🏆</span>
-              <div>
-                <div class="achievement-title">Winner — Ideathon Competition</div>
-                <div class="achievement-meta">Received prestigious Entrepreneurship training at WE-Hub Headquarters,
-                  Hyderabad.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 reveal delay-300">
-            <div class="achievement-card">
-              <span class="achievement-icon" aria-hidden="true">🚀</span>
-              <div>
-                <div class="achievement-title">Smart India Hackathon (SIH)</div>
-                <div class="achievement-meta">Selected for Internal Round of Smart India Hackathon solving national
-                  challenges.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Certifications Grid -->
-        <h3 class="mb-3 font-mono text-cyan" style="font-size: 1.1rem; letter-spacing: 0.04em;">📜 VERIFIED
-          CERTIFICATIONS</h3>
-        <div class="row g-4 reveal">
-          <div class="col-md-6">
-            <div class="cert-card">
-              <span class="cert-icon" aria-hidden="true">🐍</span>
-              <div>
-                <div class="cert-title">Python Programming and Development Certification</div>
-                <div class="cert-issuer">Vault of Codes</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="cert-card">
-              <span class="cert-icon" aria-hidden="true">💻</span>
-              <div>
-                <div class="cert-title">Complete Web Development Bootcamp</div>
-                <div class="cert-issuer">Dr. Angela Yu · Udemy</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===================================================================
-         8. EXTRACURRICULAR ACTIVITIES & HOBBIES
-         =================================================================== -->
-    <section class="section section-alt" id="activities" aria-labelledby="activities-title">
-      <div class="container">
-
-        <div class="section-heading mb-5 reveal">
-          <span class="eyebrow">07 / Beyond the Code</span>
-          <h2 id="activities-title">Leadership, community &amp; interests.</h2>
-          <p class="section-intro">Active engagement in peer communities, global volunteering, and technical curiosity.
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <!-- Extracurricular Activities -->
-          <div class="col-lg-6 reveal-left">
-            <div class="activity-card">
-              <h4>
-                <span style="color: var(--cyan);">⚡</span>
-                Extracurricular Activities
-              </h4>
-              <ul class="activity-list">
-                <li>Participated in multiple hackathons and innovation challenges focused on developing practical
-                  technology solutions.</li>
-                <li>Volunteered at the International Rice Conference, helping in event coordination and supporting
-                  participant activities.</li>
-                <li>Actively involved in technical learning communities and peer discussions on programming and software
-                  development.</li>
-                <li>Experiencing new technologies regularly and building small projects to strengthen programming
-                  skills.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Hobbies -->
-          <div class="col-lg-6 reveal-right">
-            <div class="activity-card">
-              <h4>
-                <span style="color: var(--violet);">🎯</span>
-                Hobbies &amp; Interests
-              </h4>
-              <ul class="activity-list">
-                <li>Competitive Programming and algorithmic problem solving across various platforms.</li>
-                <li>Exploring Artificial Intelligence, LLMs, and emerging technologies.</li>
-                <li>Participating in competitive Hackathons, Ideathons, and tech team events.</li>
-                <li>Reading books and research articles about technology, system architecture, and innovation.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ===================================================================
-         9. CONTACT SECTION
-         =================================================================== -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="row g-5">
-
-          <!-- Left: Contact Details -->
+          <!-- Left: Contact Details & Quick Links -->
           <div class="col-lg-5 reveal-left">
-            <span class="eyebrow">08 / Let's Connect</span>
-            <h2 id="contact-title">Get in touch.</h2>
-            <p>Interested in hiring, collaborating on an AI/full-stack project, or discussing engineering opportunities?
-              Drop me a line.</p>
+            <div class="contact-meta-card h-100">
 
-            <div class="contact-meta-card mt-4">
-              <span class="font-mono text-silver"
-                style="font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase;">Direct Email</span>
-              <a class="contact-email-link" href="mailto:sathvika.talari04@gmail.com" id="email-link">
-                sathvika.talari04@gmail.com
-              </a>
+              <!-- Email Card with 1-Click Copy -->
+              <div class="contact-email-box">
+                <div class="contact-email-top d-flex justify-content-between align-items-center mb-1">
+                  <span class="contact-email-tag">Direct Email</span>
+                  <button class="btn btn-sm btn-outline-studio contact-copy-btn" id="copy-email-btn" type="button"
+                    title="Copy email to clipboard">
+                    <svg class="copy-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                    <span id="copy-email-text">Copy</span>
+                  </button>
+                </div>
+                <a class="contact-email-val" href="mailto:sathvika.talari04@gmail.com" id="email-link"
+                  title="Send email to Sathvika Talari">
+                  sathvika.talari04@gmail.com
+                </a>
+              </div>
 
-              <p class="contact-location">
+              <!-- Location -->
+              <div class="contact-location">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
+                  stroke="currentColor" stroke-width="2" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                Hyderabad, Telangana, India
-              </p>
-
-              <!-- Social Links -->
-              <div class="contact-social-links">
-                <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer" class="social-link-row"
-                  id="github-link">
-                  <i class="devicon-github-original" style="font-size: 1.25rem;"></i>
-                  <span>github.com/SathvikaTalari</span>
-                </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link-row"
-                  id="linkedin-link">
-                  <i class="devicon-linkedin-plain colored" style="font-size: 1.25rem;"></i>
-                  <span>LinkedIn Profile</span>
-                </a>
+                <span>Hyderabad, Telangana, India</span>
               </div>
 
-              <a class="btn btn-outline-studio w-100" href="assets/SathvikaTalari_Resume.pdf"
+              <!-- Social Links with Verified URLs -->
+              <div class="contact-social-links">
+                <a href="https://linkedin.com/in/sathvika-talari-033093308" target="_blank" rel="noopener noreferrer"
+                  class="social-link-row" id="linkedin-link">
+                  <div class="social-link-icon-box">
+                    <i class="devicon-linkedin-plain colored"></i>
+                  </div>
+                  <div class="social-link-text">
+                    <span class="social-link-title">LinkedIn</span>
+                    <span class="social-link-sub">sathvika-talari-033093308</span>
+                  </div>
+                  <span class="social-link-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer"
+                  class="social-link-row" id="github-link">
+                  <div class="social-link-icon-box">
+                    <i class="devicon-github-original"></i>
+                  </div>
+                  <div class="social-link-text">
+                    <span class="social-link-title">GitHub</span>
+                    <span class="social-link-sub">github.com/SathvikaTalari</span>
+                  </div>
+                  <span class="social-link-arrow" aria-hidden="true">↗</span>
+                </a>
+
+              </div>
+
+              <!-- Download Resume Action -->
+              <a class="btn btn-outline-studio contact-resume-btn w-100" href="assets/SathvikaTalari_Resume.pdf"
                 download="SathvikaTalari_Resume.pdf" id="contact-resume-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                  stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
-                Download Updated Resume (PDF)
+                <span>Download Resume (PDF)</span>
               </a>
             </div>
           </div>
 
-          <!-- Right: Contact Form -->
+          <!-- Right: Interactive Validated Contact Form -->
           <div class="col-lg-7 reveal-right">
-            <div class="contact-form-card">
-              <h3 class="mb-1">Send a Message</h3>
-              <p class="text-silver mb-4" style="font-size:0.875rem;">Real-time validated contact form.</p>
+            <div class="contact-form-card h-100">
+              <h3>Send a Message</h3>
+              <p class="contact-form-subtitle">Have a project in mind, a question, or an opportunity? Feel free to drop a message.</p>
 
-              <form id="contact-form" novalidate>
+              <form id="contact-form" action="https://formsubmit.co/sathvika.talari04@gmail.com" method="POST" novalidate>
+                <input type="hidden" name="_subject" value="New Portfolio Message for Sathvika Talari">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
                 <div class="row g-3">
                   <div class="col-sm-6">
                     <label class="form-label" for="contact-name">Your Name</label>
@@ -949,14 +1439,14 @@
                   <div class="col-sm-6">
                     <label class="form-label" for="contact-email">Email Address</label>
                     <input class="form-control" type="email" name="email" id="contact-email" autocomplete="email"
-                      maxlength="254" required aria-describedby="email-error" placeholder="alex@company.com">
+                      maxlength="254" required aria-describedby="email-error" placeholder="alex@example.com">
                     <div class="invalid-feedback" id="email-error"></div>
                   </div>
                   <div class="col-12">
                     <label class="form-label" for="contact-message">Your Message</label>
-                    <textarea class="form-control" id="contact-message" name="message" rows="5" minlength="10"
+                    <textarea class="form-control" id="contact-message" name="message" rows="4" minlength="10"
                       maxlength="1000" required aria-describedby="msg-help msg-error"
-                      placeholder="Hi Sathvika, I'd like to discuss an opportunity..."></textarea>
+                      placeholder="Hi Sathvika, I saw your portfolio and would like to discuss a software engineering opportunity..."></textarea>
                     <div id="msg-help" class="form-help-text">
                       <span>10–1,000 characters required</span>
                       <span id="character-count">0 / 1,000</span>
@@ -965,12 +1455,13 @@
                   </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary mt-4" id="form-submit-btn">
+                <button type="submit" class="btn btn-primary contact-submit-btn mt-4" id="form-submit-btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                   </svg>
-                  Send Message
+                  <span>Send Message</span>
                 </button>
 
                 <div id="form-status" class="mt-3" role="status" aria-live="polite"></div>
@@ -992,12 +1483,12 @@
       <div>
         <a class="footer-brand-link" href="#home">
           SATHVIKA TALARI
-          <span>COMPUTER SCIENCE · FULL-STACK · AI-ML</span>
+          <span>CS ENGINEER · FULL-STACK &amp; AI-ML DEVELOPER</span>
         </a>
       </div>
 
       <p class="footer-copy">
-        &copy; <span id="year">2026</span> Sathvika Talari · <a href="https://github.com/SathvikaTalari" target="_blank" rel="noopener noreferrer" style="color:var(--cyan);">@SathvikaTalari</a>
+        Developed by Sathvika Talari &copy; <span id="year">2026</span>. All rights reserved.
       </p>
 
       <a href="#home" class="back-to-top">
@@ -1011,48 +1502,333 @@
   </footer>
 
   <!-- ===================================================================
-       PROJECT CASE STUDY & INTERACTIVE DEMO MODAL
+       PROJECT CASE STUDY MODAL (Pure Description Only)
        =================================================================== -->
   <div class="modal fade" id="project-modal" tabindex="-1" aria-labelledby="project-modal-title" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <div>
-            <span class="modal-meta-label" id="project-modal-badge"></span>
             <h2 class="modal-title" id="project-modal-title"></h2>
+            <div class="proj-modal-subtitle" id="project-modal-subtitle"></div>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close modal"></button>
         </div>
 
         <div class="modal-body">
-          <span class="modal-meta-label">Overview &amp; Purpose</span>
-          <p id="project-modal-description" class="mb-4"></p>
+          <!-- Project Banner Cover Artwork -->
+          <div class="proj-modal-banner-box mb-4" id="project-modal-banner-box">
+            <img src="" alt="" id="project-modal-banner-img" class="proj-modal-banner-img" loading="lazy">
+          </div>
 
-          <span class="modal-meta-label">Technical Contribution</span>
-          <p id="project-modal-contribution" class="mb-4 text-silver" style="font-size:0.9375rem;"></p>
-
-          <span class="modal-meta-label">Key Features &amp; Capabilities</span>
-          <ul id="project-modal-concepts" class="modal-highlights"></ul>
-
-          <span class="modal-meta-label">Technology Stack</span>
-          <ul id="project-modal-tags" class="tag-list mb-4"></ul>
-
-          <!-- Interactive Live Demo Sandbox Container -->
-          <div id="project-modal-interactive-area" class="demo-sandbox"></div>
+          <!-- Structured Project Details (Overview, Problem, Solution, Features, Technologies Used, Contribution, Context) -->
+          <div id="project-modal-details-content"></div>
         </div>
 
         <div class="modal-footer d-flex justify-content-between align-items-center flex-wrap gap-2">
-          <button class="btn btn-outline-studio btn-sm" type="button" data-bs-dismiss="modal">Close</button>
-          <a id="project-modal-live-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="display: none;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
-            Launch Deployed App ↗
-          </a>
+          <button class="btn btn-outline-studio btn-sm" type="button" data-bs-dismiss="modal">Close Window</button>
+          <div class="d-flex gap-2">
+            <a id="project-modal-github-link" href="#" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline-studio btn-sm">
+              <i class="devicon-github-original"></i> GitHub Repo
+            </a>
+            <a id="project-modal-live-link" href="#" target="_blank" rel="noopener noreferrer"
+              class="btn btn-primary btn-sm" style="display: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              Live Demo ↗
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+  <!-- ===================================================================
+       CERTIFICATE LIGHTBOX MODAL (High-Resolution Verifiable Preview)
+       =================================================================== -->
+  <div class="modal fade" id="cert-lightbox-modal" tabindex="-1" aria-labelledby="cert-lightbox-title"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content"
+        style="background: #0f1116; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 18px; overflow: hidden;">
+        <div class="modal-header d-flex justify-content-between align-items-center"
+          style="border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding: 16px 22px;">
+          <div>
+            <span class="modal-meta-label">Official Credential</span>
+            <h3 class="modal-title font-sans fs-5 text-white m-0" id="cert-lightbox-title">Certificate</h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-2 text-center" style="background: #07090e;">
+          <img id="cert-lightbox-img" src="" alt="Verified Certificate"
+            style="width: 100%; height: auto; max-height: 75vh; object-fit: contain; border-radius: 8px; display: block; margin: 0 auto;">
+        </div>
+        <div class="modal-footer justify-content-between align-items-center flex-wrap gap-2"
+          style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding: 14px 22px;">
+          <span class="font-mono text-silver" style="font-size: 0.8rem;">Verified Industry Credential · Sathvika
+            Talari</span>
+          <div class="d-flex gap-2">
+            <a id="cert-lightbox-download" href="" download="Certificate.jpg"
+              class="btn btn-outline-studio btn-sm">Download Image 📥</a>
+            <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       COMMAND PALETTE MODAL (Ctrl + K)
+       =================================================================== -->
+  <div class="modal fade" id="command-palette-modal" tabindex="-1" aria-labelledby="cmd-palette-label"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content cmd-palette-content">
+        <div class="cmd-palette-header">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" stroke-width="2" class="text-cyan">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <input type="text" id="cmd-palette-input" class="cmd-search-input"
+            placeholder="Type a command or jump to section (e.g. LADRIS, skills, email, theme)..."
+            aria-label="Search command">
+          <span class="font-mono text-muted" style="font-size:0.75rem;">ESC to exit</span>
+        </div>
+        <div class="cmd-palette-results" id="cmd-palette-results">
+          <!-- Results populated dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ===================================================================
+       OFFICIAL RESUME MODAL (Actual PDF & High-Res Document Viewer)
+       =================================================================== -->
+  <div class="modal fade resume-modal" id="resume-modal" tabindex="-1" aria-labelledby="resume-modal-title"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+      <div class="modal-content"
+        style="background: var(--surface-bg); border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden;">
+
+        <!-- Modal Header / Toolbar -->
+        <div class="modal-header d-flex justify-content-between align-items-center flex-wrap gap-2"
+          style="background: rgba(13, 16, 23, 0.96); border-bottom: 1px solid var(--border-color); padding: 14px 22px;">
+          <div>
+            <h2 class="modal-title font-display mb-0" id="resume-modal-title"
+              style="font-size:1.15rem; font-weight:700; color: var(--ink-primary);">
+              Resume
+            </h2>
+            <span class="font-mono text-cyan" style="font-size:0.75rem; letter-spacing:0.04em;">
+              B.Tech CSE · Full-Stack &amp; AI-ML Developer · Hyderabad, Telangana
+            </span>
+          </div>
+
+          <!-- Direct Actions & Zoom Controls -->
+          <div class="d-flex align-items-center flex-wrap gap-2">
+            <!-- Zoom Controls -->
+            <div class="resume-zoom-controls d-inline-flex align-items-center gap-1 p-1 rounded"
+              style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1);">
+              <button type="button" class="btn btn-sm btn-outline-studio py-0 px-2" id="resume-zoom-out"
+                title="Zoom Out" style="font-size: 0.95rem; line-height: 1.5; font-weight: bold;">−</button>
+              <span id="resume-zoom-display" class="font-mono text-cyan px-2"
+                style="font-size: 0.8rem; min-width: 48px; text-align: center;">100%</span>
+              <button type="button" class="btn btn-sm btn-outline-studio py-0 px-2" id="resume-zoom-in"
+                title="Zoom In" style="font-size: 0.95rem; line-height: 1.5; font-weight: bold;">+</button>
+              <button type="button" class="btn btn-sm btn-outline-studio py-0 px-2" id="resume-zoom-fit"
+                title="Fit Width" style="font-size: 0.75rem;">125%</button>
+            </div>
+
+            <a href="assets/SathvikaTalari_Resume.pdf" download="Sathvika_Talari_Resume.pdf"
+              class="btn btn-primary btn-sm d-inline-flex align-items-center gap-1"
+              title="Download official PDF resume">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              <span>Download PDF</span>
+            </a>
+
+            <a href="assets/SathvikaTalari_Resume.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn btn-outline-studio btn-sm d-inline-flex align-items-center gap-1"
+              title="Open native vector PDF in full browser window">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              <span>Open in New Tab ↗</span>
+            </a>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close modal"></button>
+          </div>
+        </div>
+
+        <!-- Modal Body: Real Document Viewer with Zoomable Canvas -->
+        <div class="modal-body p-2 p-md-3" id="resume-modal-scroll-area"
+          style="background: #06080d; min-height: 75vh; max-height: 82vh; overflow: auto; text-align: center;">
+          <div class="actual-resume-container" id="resume-container-box"
+            style="display: inline-block; margin: 0 auto; text-align: left; transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1); transform-origin: top center;">
+            <!-- Crisp Ultra-HD Real Resume Document Page (400 DPI) -->
+            <div class="actual-resume-page shadow-lg"
+              style="width: 100%; max-width: 960px; min-width: 320px; background: #ffffff; border-radius: 4px; overflow: hidden; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);">
+              <img id="resume-preview-img" src="assets/resume-preview.png" alt="Sathvika Talari Resume"
+                class="img-fluid w-100 d-block" style="display: block; width: 100%; height: auto;"
+                loading="eager">
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer d-flex justify-content-between align-items-center flex-wrap gap-2"
+          style="background: rgba(13, 16, 23, 0.96); border-top: 1px solid var(--border-color); padding: 12px 22px;">
+          <span class="text-silver font-mono" style="font-size:0.75rem;">
+            Official Resume of Sathvika Talari · Hyderabad, India · Available for Full-Stack &amp; AI-ML Roles
+          </span>
+          <div class="d-flex gap-2">
+            <a href="assets/SathvikaTalari_Resume.pdf" download="Sathvika_Talari_Resume.pdf"
+              class="btn btn-primary btn-sm">
+              Download PDF 📥
+            </a>
+            <button class="btn btn-outline-studio btn-sm" type="button" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Clipboard Toast Notification -->
+          <div id="st-toast" class="st-toast" role="status" aria-live="polite"></div>
+
+          <!-- ===================================================================
+       PLAYFUL JUMPING DOG COMPANION (Photo-Accurate Petite Companion)
+       =================================================================== -->
+          <div class="jumping-dog-container" id="jumping-dog" role="button" tabindex="0"
+            aria-label="Cute puppy companion! Click to make him do a backflip and bark, or double-click to let him nap."
+            title="Click to play! Double-click to nap 💤">
+            <div class="dog-speech-bubble" id="dog-speech-bubble">Woof! 🐾</div>
+            <div class="dog-character">
+              <!-- Ground Shadow (stamped on the floor) -->
+              <div class="dog-shadow-oval" id="dog-shadow-oval"></div>
+              <!-- Dog Body Wrapper (hops, tilts & flips) -->
+              <div class="dog-body-wrapper" id="dog-body-wrapper">
+                <svg class="dog-svg" viewBox="0 0 68 56" width="60" height="50" aria-hidden="true">
+                  <!-- Far Hind Leg -->
+                  <g class="dog-leg-bl" id="dog-leg-bl">
+                    <path d="M 16 34 L 14 47.5 Q 14 49.5 17 49.5 L 20 49.5 Q 21 47 21 44 L 21 34 Z" fill="#d2c9bd" />
+                  </g>
+                  <!-- Far Front Leg -->
+                  <g class="dog-leg-fl" id="dog-leg-fl">
+                    <path d="M 42 32 L 40 47.5 Q 40 49.5 43 49.5 L 46 49.5 Q 47 47 47 44 L 47 32 Z" fill="#d2c9bd" />
+                  </g>
+
+                  <!-- Tail (Fluffy white pointing up-back with tan base) -->
+                  <g class="dog-tail-wag" id="dog-tail">
+                    <path d="M 14 30 C 8 28, 6 18, 12 15 C 16 18, 17 25, 16 31 Z" fill="#ffffff" stroke="#e0d8cc"
+                      stroke-width="0.5" />
+                    <path d="M 14 30 C 11 29, 10 24, 12 21 C 14 23, 15 27, 15 30 Z" fill="#b8743b" opacity="0.6" />
+                    <circle cx="11.5" cy="16" r="3" fill="#ffffff" />
+                  </g>
+
+                  <!-- Entire Dog Body + Neck (One contiguous smooth path!) -->
+                  <path d="M 16 30
+                   C 20 28, 28 26, 36 22
+                   C 38 18, 41 12, 45 9
+                   C 49 9, 53 11, 54 14
+                   C 56 16, 59 17, 59 19
+                   C 59 21, 57 23, 54 23.5
+                   C 51 24, 48 26, 48 29
+                   C 49 34, 48 38, 45 40
+                   C 38 43, 30 43, 23 41
+                   C 17 39, 14 35, 16 30 Z" fill="#ffffff" />
+
+                  <!-- 3D underbody shading -->
+                  <path d="M 18 36 C 22 41, 32 43, 43 40 C 36 43, 24 43, 18 36 Z" fill="#ece5da" />
+
+                  <!-- Caramel Saddle / Hip Patch (matching reference photo) -->
+                  <path d="M 19 31 C 20 27, 26 26, 29 29 C 32 32, 31 37, 27 38 C 23 39, 19 36, 19 31 Z"
+                    fill="#b8743b" />
+                  <path d="M 21 30 C 23 28, 27 29, 27 33 C 26 36, 23 37, 21 34 Z" fill="#965825" opacity="0.4" />
+
+                  <!-- Near Hind Leg (sturdy puppy standing stance with natural haunch) -->
+                  <g class="dog-leg-br" id="dog-leg-br">
+                    <path
+                      d="M 18 32 C 24 32, 27 37, 26 43 L 25 50 Q 25 51.5 22 51.5 L 19 51.5 Q 18 50 18 45 C 17 38, 17 33, 18 32 Z"
+                      fill="#ffffff" />
+                    <ellipse cx="22" cy="51" rx="3.5" ry="1.8" fill="#f5ede2" />
+                    <path d="M 21 50 L 21 51.5 M 23 50 L 23 51.5" stroke="#d5ccbe" stroke-width="0.6"
+                      stroke-linecap="round" />
+                  </g>
+
+                  <!-- Near Front Leg (standing sturdy fluffy leg) -->
+                  <g class="dog-leg-fr" id="dog-leg-fr">
+                    <path
+                      d="M 43 31 C 45 31, 48 33, 48 38 L 48 50 Q 48 51.5 45 51.5 L 42 51.5 Q 41 50 41 45 C 41 38, 41 33, 43 31 Z"
+                      fill="#ffffff" />
+                    <ellipse cx="45" cy="51" rx="3.5" ry="1.8" fill="#f5ede2" />
+                    <path d="M 44 50 L 44 51.5 M 46 50 L 46 51.5" stroke="#d5ccbe" stroke-width="0.6"
+                      stroke-linecap="round" />
+                  </g>
+
+                  <!-- Caramel Patch on Ear & Temple -->
+                  <path
+                    d="M 40 18 C 38 13, 42 9, 47 9 C 49 9, 52 11, 52 13 C 50 15, 47 18, 44 21 C 42 22, 40 21, 40 18 Z"
+                    fill="#b8743b" />
+                  <path d="M 41 16 C 40 13, 43 10, 46 10 C 44 12, 43 15, 43 18 Z" fill="#915322" opacity="0.4" />
+
+                  <!-- Far Ear -->
+                  <path d="M 44 9 Q 47 6 49 8 Q 50 11 48 12 Z" fill="#965825" />
+
+                  <!-- Folded Floppy Near Ear (front ear hanging down naturally) -->
+                  <g class="dog-ear-bob" id="dog-ear">
+                    <path d="M 44 10 C 41 10, 38 13, 39 18 C 40 20, 44 20, 46 15 C 47 12, 46 10, 44 10 Z" fill="#b06d35"
+                      stroke="#8c4e1d" stroke-width="0.5" />
+                    <path d="M 39 12 C 38 15, 39 18, 40 19 C 41 20, 43 19, 44 16 Z" fill="#52270a" opacity="0.45" />
+                  </g>
+
+                  <!-- White Forehead Blaze & Snout overlay (seamless head structure) -->
+                  <path
+                    d="M 47 9 C 50 9, 53 11, 54 14 C 55 15.5, 57 16.5, 58 18 C 58.8 19.2, 58.5 20.8, 57.5 21.8 C 55.5 23, 52 23.5, 49 22.5 C 47 21, 46 17, 46 13 Z"
+                    fill="#ffffff" />
+
+                  <!-- Black Button Nose (compact at tip of snout) -->
+                  <ellipse cx="58.2" cy="18.2" rx="1.6" ry="1.3" fill="#181310" />
+                  <circle cx="57.8" cy="17.8" r="0.4" fill="#ffffff" />
+
+                  <!-- Cute mouth line right under nose -->
+                  <path d="M 57.8 19.8 C 56.8 20.6, 55 20.6, 54 20" fill="none" stroke="#2b201a" stroke-width="0.75"
+                    stroke-linecap="round" />
+
+                  <!-- Soulful Dark Puppy Eye with dark eyeliner shadow (exact photo match) -->
+                  <g>
+                    <ellipse cx="51.2" cy="14.8" rx="2.8" ry="2.6" fill="#382012" opacity="0.45" />
+                    <ellipse cx="51.4" cy="14.6" rx="2.2" ry="2.3" fill="#18110b" />
+                    <circle cx="51.6" cy="14.4" r="1.5" fill="#4d2f1b" />
+                    <circle cx="51.8" cy="14.4" r="1.0" fill="#080503" />
+                    <circle cx="51.0" cy="13.8" r="0.75" fill="#ffffff" />
+                    <circle cx="52.2" cy="15.1" r="0.3" fill="#ffffff" />
+                    <path d="M 49.5 12 C 50.8 11.2, 52.8 11.5, 54 12.5" stroke="#663b1c" stroke-width="0.7" fill="none"
+                      stroke-linecap="round" />
+                  </g>
+
+                  <!-- Soft pink cheek blush -->
+                  <ellipse cx="48" cy="18" rx="2" ry="1.2" fill="#f472b6" opacity="0.3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+
 
 </body>
 

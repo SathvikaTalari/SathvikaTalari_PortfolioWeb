@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="vqBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1726" />
+      <stop offset="50%" stop-color="#141a32" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+    <linearGradient id="vqAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="vqPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#vqBg)" />
+  <circle cx="180" cy="180" r="160" fill="rgba(16, 185, 129, 0.12)" filter="blur(60px)" />
+  <circle cx="640" cy="300" r="170" fill="rgba(99, 102, 241, 0.14)" filter="blur(70px)" />
+
+  <g transform="translate(60, 40)">
+    <!-- Main Shell -->
+    <rect width="680" height="400" rx="16" fill="rgba(15, 23, 42, 0.9)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" />
+    <rect width="680" height="44" rx="16" fill="rgba(30, 41, 59, 0.7)" />
+    <!-- Window controls -->
+    <circle cx="24" cy="22" r="6" fill="#ef4444" />
+    <circle cx="44" cy="22" r="6" fill="#f59e0b" />
+    <circle cx="64" cy="22" r="6" fill="#10b981" />
+    <text x="340" y="27" font-family="'Space Grotesk', system-ui, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" text-anchor="middle" letter-spacing="0.08em">VIDYAQUEST · OFFLINE-FIRST STEM LEARNING PWA</text>
+
+    <!-- Left: Mobile PWA Preview Frame -->
+    <g transform="translate(30, 60)">
+      <rect width="240" height="315" rx="20" fill="#090d16" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
+      <!-- PWA Dynamic Island / Speaker -->
+      <rect x="85" y="10" width="70" height="12" rx="6" fill="#1e293b" />
+      <circle cx="140" cy="16" r="3" fill="#38bdf8" />
+
+      <!-- PWA Offline Badge -->
+      <rect x="18" y="32" width="204" height="24" rx="6" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.4)" />
+      <circle cx="32" cy="44" r="4" fill="#10b981" />
+      <text x="44" y="48" font-family="'Space Grotesk', system-ui" font-size="9" font-weight="700" fill="#10b981">OFFLINE MODE READY · SYNC ACTIVE</text>
+
+      <!-- STEM Quiz Card in App -->
+      <rect x="18" y="66" width="204" height="150" rx="10" fill="rgba(30, 41, 59, 0.8)" stroke="rgba(255,255,255,0.06)" />
+      <text x="30" y="86" font-family="'Space Grotesk', system-ui" font-size="10" font-weight="700" fill="#38bdf8">Grade 9 Physics · Gravity &amp; Motion</text>
+      <text x="30" y="104" font-family="'Plus Jakarta Sans', system-ui" font-size="9" fill="#cbd5e1">Q2: Calculate gravitational acceleration</text>
+
+      <rect x="28" y="118" width="184" height="24" rx="6" fill="rgba(16, 185, 129, 0.2)" stroke="#10b981" stroke-width="1.5" />
+      <text x="38" y="134" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#10b981">✓ A) 9.8 m/s² (Correct)</text>
+
+      <rect x="28" y="148" width="184" height="24" rx="6" fill="rgba(255,255,255,0.04)" />
+      <text x="38" y="164" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">B) 8.3 m/s²</text>
+
+      <rect x="28" y="178" width="184" height="24" rx="6" fill="rgba(255,255,255,0.04)" />
+      <text x="38" y="194" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94a3b8">C) 12.1 m/s²</text>
+
+      <!-- Mini-Game gamification streak -->
+      <rect x="18" y="228" width="204" height="42" rx="8" fill="url(#vqPurple)" />
+      <text x="32" y="246" font-family="'Space Grotesk', system-ui" font-size="11" font-weight="800" fill="#ffffff">🔥 7-Day STEM Streak!</text>
+      <text x="32" y="260" font-family="'Space Grotesk', system-ui" font-size="9" fill="#e0e7ff">+150 XP · Grade Leaderboard #2</text>
+    </g>
+
+    <!-- Right: Features & Indian Languages Engine Panel -->
+    <g transform="translate(294, 60)">
+      <!-- 8 Indian Languages Banner -->
+      <rect width="360" height="92" rx="10" fill="rgba(21, 30, 50, 0.9)" stroke="rgba(255,255,255,0.08)" />
+      <text x="18" y="24" font-family="'Space Grotesk', system-ui" font-size="10" font-weight="700" fill="#06b6d4" letter-spacing="0.05em">MULTILINGUAL LOCALIZATION (8 LANGUAGES)</text>
+      <text x="18" y="46" font-family="'Plus Jakarta Sans', system-ui" font-size="11" fill="#f8fafc">Telugu, Hindi, Tamil, Kannada, Marathi, Bengali, Malayalam &amp; English</text>
+
+      <!-- Language Pills -->
+      <g transform="translate(18, 56)">
+        <rect width="38" height="22" rx="4" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" /><text x="19" y="70" font-family="system-ui" font-size="9" fill="#38bdf8" text-anchor="middle">తెలుగు</text>
+        <rect x="46" width="38" height="22" rx="4" fill="rgba(16,185,129,0.15)" stroke="#10b981" /><text x="65" y="70" font-family="system-ui" font-size="9" fill="#34d399" text-anchor="middle">हिन्दी</text>
+        <rect x="92" width="38" height="22" rx="4" fill="rgba(139,92,246,0.15)" stroke="#8b5cf6" /><text x="111" y="70" font-family="system-ui" font-size="9" fill="#a78bfa" text-anchor="middle">தமிழ்</text>
+        <rect x="138" width="44" height="22" rx="4" fill="rgba(251,191,36,0.15)" stroke="#fbbf24" /><text x="160" y="70" font-family="system-ui" font-size="9" fill="#fbbf24" text-anchor="middle">ಕನ್ನಡ</text>
+        <rect x="190" width="46" height="22" rx="4" fill="rgba(244,63,94,0.15)" stroke="#f43f5e" /><text x="213" y="70" font-family="system-ui" font-size="9" fill="#fb7185" text-anchor="middle">मराठी</text>
+        <rect x="244" width="42" height="22" rx="4" fill="rgba(56,189,248,0.15)" stroke="#38bdf8" /><text x="265" y="70" font-family="system-ui" font-size="9" fill="#7dd3fc" text-anchor="middle">বাংলা</text>
+      </g>
+
+      <!-- Architecture Highlights Card -->
+      <rect y="106" width="360" height="209" rx="10" fill="rgba(21, 30, 50, 0.9)" stroke="rgba(255,255,255,0.08)" />
+      <text x="18" y="130" font-family="'Space Grotesk', system-ui" font-size="11" font-weight="700" fill="#34d399">PWA Core Engineering Highlights</text>
+
+      <!-- Architecture items -->
+      <g transform="translate(18, 146)">
+        <!-- Bullet 1 -->
+        <circle cx="6" cy="6" r="4" fill="#10b981" />
+        <text x="18" y="10" font-family="'Plus Jakarta Sans', system-ui" font-size="11" font-weight="600" fill="#f8fafc">Service Worker Cache &amp; Offline Sync</text>
+        <text x="18" y="24" font-family="'Plus Jakarta Sans', system-ui" font-size="9.5" fill="#94a3b8">Zero data-loss local quiz synchronization to SQLite database</text>
+
+        <!-- Bullet 2 -->
+        <circle cx="6" cy="46" r="4" fill="#38bdf8" />
+        <text x="18" y="50" font-family="'Plus Jakarta Sans', system-ui" font-size="11" font-weight="600" fill="#f8fafc">Node.js, Express &amp; JWT Authentication</text>
+        <text x="18" y="64" font-family="'Plus Jakarta Sans', system-ui" font-size="9.5" fill="#94a3b8">Secure student/teacher tokenized REST APIs and session management</text>
+
+        <!-- Bullet 3 -->
+        <circle cx="6" cy="86" r="4" fill="#a78bfa" />
+        <text x="18" y="90" font-family="'Plus Jakarta Sans', system-ui" font-size="11" font-weight="600" fill="#f8fafc">Interactive Gamified STEM Quizzes</text>
+        <text x="18" y="104" font-family="'Plus Jakarta Sans', system-ui" font-size="9.5" fill="#94a3b8">Tailored curriculum modules for grades 6–12 across science &amp; math</text>
+      </g>
+    </g>
+  </g>
+</svg>

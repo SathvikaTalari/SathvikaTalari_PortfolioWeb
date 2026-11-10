@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="lgb-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+  <!-- Tree / Gradient Booster Network -->
+  <circle cx="32" cy="12" r="7" fill="url(#lgb-grad)"/>
+  <circle cx="16" cy="34" r="6" fill="#10b981"/>
+  <circle cx="48" cy="34" r="6" fill="#0284c7"/>
+  <circle cx="10" cy="52" r="4.5" fill="#34d399"/>
+  <circle cx="24" cy="52" r="4.5" fill="#10b981"/>
+  <circle cx="40" cy="52" r="4.5" fill="#0284c7"/>
+  <circle cx="54" cy="52" r="4.5" fill="#38bdf8"/>
+  <!-- Connectors -->
+  <line x1="32" y1="19" x2="16" y2="28" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="19" x2="48" y2="28" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="16" y1="40" x2="10" y2="47.5" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+  <line x1="16" y1="40" x2="24" y2="47.5" stroke="#34d399" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="40" x2="40" y2="47.5" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="48" y1="40" x2="54" y2="47.5" stroke="#38bdf8" stroke-width="2" stroke-linecap="round"/>
+</svg>

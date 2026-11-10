@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="wehubGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+    <linearGradient id="wehubBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1136" />
+      <stop offset="100%" stop-color="#110822" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="url(#wehubBg)" stroke="rgba(236,72,153,0.3)" stroke-width="2.5" />
+  <!-- Dynamic Hub Spokes -->
+  <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-dasharray="4 4" />
+  <circle cx="60" cy="60" r="24" fill="none" stroke="rgba(236,72,153,0.25)" stroke-width="2" />
+  <!-- Central Hub Node -->
+  <circle cx="60" cy="60" r="14" fill="url(#wehubGrad)" />
+  <!-- Connecting Orbit Nodes -->
+  <circle cx="34" cy="42" r="6" fill="#8b5cf6" />
+  <circle cx="86" cy="42" r="6" fill="#ec4899" />
+  <circle cx="60" cy="94" r="6" fill="#f43f5e" />
+  <line x1="60" y1="60" x2="34" y2="42" stroke="rgba(139,92,246,0.6)" stroke-width="2" />
+  <line x1="60" y1="60" x2="86" y2="42" stroke="rgba(236,72,153,0.6)" stroke-width="2" />
+  <line x1="60" y1="60" x2="60" y2="94" stroke="rgba(244,63,94,0.6)" stroke-width="2" />
+  <!-- Typography / Emblem -->
+  <text x="60" y="65" font-family="'Space Grotesk', system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.05em">WE</text>
+  <text x="60" y="112" font-family="'Space Grotesk', system-ui, sans-serif" font-size="10" font-weight="700" fill="#f472b6" text-anchor="middle" letter-spacing="0.1em">HUB</text>
+</svg>
+

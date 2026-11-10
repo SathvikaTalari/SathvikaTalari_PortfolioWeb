@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 52" width="58" height="42">
+  <!-- Dynamic Floor Contact Shadow -->
+  <ellipse class="dog-shadow-oval" cx="34" cy="48" rx="22" ry="3.5" fill="rgba(0,0,0,0.35)"/>
+
+  <!-- Far Ear (Behind Head) -->
+  <path class="dog-far-ear" d="M 38 7 C 36 3, 42 2, 44 6 C 45 9, 42 12, 40 10 Z" fill="#d97706"/>
+
+  <!-- Tail (Happy Wagging Puppy Tail) -->
+  <g class="dog-tail-group">
+    <path class="dog-tail" d="M 14 26 C 8 20, 6 12, 12 7 C 15 12, 16 19, 16 25 Z" fill="#f59e0b" stroke="#d97706" stroke-width="0.8" stroke-linecap="round"/>
+    <!-- White Fluffy Tip -->
+    <path d="M 10 9 C 9 8, 10 6, 12 7 C 13.5 8, 13 10, 11 11 Z" fill="#fffbeb"/>
+  </g>
+
+  <!-- Back Left Leg & Paw (Far side, darker shade) -->
+  <g class="dog-leg dog-leg-back-left">
+    <path d="M 15 28 C 13 32, 14 38, 16 43 L 20 43 C 19 38, 18 32, 17 28 Z" fill="#c26d24"/>
+    <ellipse cx="18" cy="43" rx="3.5" ry="2" fill="#fef3c7"/>
+  </g>
+
+  <!-- Front Left Leg & Paw (Far side) -->
+  <g class="dog-leg dog-leg-front-left">
+    <rect x="35" y="30" width="5" height="13" rx="2.5" fill="#c26d24"/>
+    <ellipse cx="37.5" cy="43" rx="3.5" ry="2" fill="#fef3c7"/>
+  </g>
+
+  <!-- Canine Puppy Body (Shaped with Chest, Nape & Haunch) -->
+  <path class="dog-torso" d="M 20 22 C 24 20, 32 20, 38 22 C 43 25, 42 34, 38 37 C 32 39, 22 38, 16 33 C 14 29, 16 24, 20 22 Z" fill="#f59e0b"/>
+  <!-- Cream Tummy & Chest Patch -->
+  <path d="M 32 24 C 38 26, 40 32, 37 36 C 33 37, 28 35, 27 30 C 27 26, 29 24, 32 24 Z" fill="#fef3c7"/>
+
+  <!-- Back Right Leg (Near side with defined thigh haunch) -->
+  <g class="dog-leg dog-leg-back-right">
+    <path d="M 18 24 C 23 25, 25 31, 23 37 L 23 43 L 19 43 C 18 39, 15 36, 15 30 Z" fill="#f59e0b"/>
+    <ellipse cx="21" cy="43" rx="3.8" ry="2.2" fill="#fef3c7"/>
+    <!-- Paw toe separations -->
+    <path d="M 20 42 L 20 44 M 22 42 L 22 44" stroke="#d97706" stroke-width="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Front Right Leg (Near side) -->
+  <g class="dog-leg dog-leg-front-right">
+    <rect x="41" y="30" width="5.5" height="13" rx="2.7" fill="#f59e0b"/>
+    <ellipse cx="43.8" cy="43" rx="3.8" ry="2.2" fill="#fef3c7"/>
+    <path d="M 43 42 L 43 44 M 45 42 L 45 44" stroke="#d97706" stroke-width="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cyan Collar with Golden Star Medallion -->
+  <path d="M 37 23 C 41 26, 46 25, 48 21" stroke="#06b6d4" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+  <circle cx="42.5" cy="25.5" r="2" fill="#fbbf24"/>
+
+  <!-- ==================== PROPER CANINE HEAD ==================== -->
+  <g class="dog-head">
+    <!-- Head Base with Anatomical Cranium, Forehead Stop, and Muzzle -->
+    <path class="dog-skull" d="M 34 20 C 33 13, 38 6, 45 6 C 50 6, 53 10, 55 13 C 57 14, 59 14.5, 62 15 C 65 15.5, 66 17, 66 18.5 C 66 20.5, 63 22, 59 22.5 C 55 23, 52 23.5, 48 24.5 C 44 25.5, 40 25, 37 23 Z" fill="#f59e0b"/>
+
+    <!-- Distinct Puppy Snout / Muzzle (Cream-colored front projection) -->
+    <path class="dog-snout" d="M 53 14 C 56 14.5, 60 15, 63 15.5 C 65.5 16, 66 17.5, 66 19 C 66 20.8, 63.5 22, 59 22.2 C 55 22.4, 52 21.8, 50 18 C 50 16, 51.5 14.5, 53 14 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="0.5"/>
+
+    <!-- Black Puppy Nose Pad at the Front Tip of Muzzle -->
+    <path d="M 63.5 16.5 C 65 16.5, 66 17.2, 66 18.2 C 66 19, 64.8 19.5, 63.5 19.5 C 62.5 19.5, 62.5 18.5, 62.8 17.5 Z" fill="#1e293b"/>
+    <!-- Tiny Nose Shine / Specular Dot -->
+    <circle cx="64.5" cy="17.2" r="0.5" fill="#ffffff"/>
+
+    <!-- Canine Mouth Line & Little Pink Tongue -->
+    <path d="M 63 19.8 C 61 21.2, 58 21.2, 56 20.5" fill="none" stroke="#1e293b" stroke-width="0.9" stroke-linecap="round"/>
+    <!-- Cute Happy Tongue Peeking Out Under Snout -->
+    <path class="dog-tongue" d="M 59 21 C 59.5 23.2, 61.5 23.2, 62 21 Z" fill="#fb7185" stroke="#f43f5e" stroke-width="0.4"/>
+
+    <!-- Canine Eye (Almond shape set above the stop with expressive pupil and gleam) -->
+    <g class="dog-eye-group">
+      <!-- Eye socket shadow -->
+      <ellipse cx="48" cy="13.8" rx="2.6" ry="3" fill="#d97706" opacity="0.3"/>
+      <!-- Eye ball -->
+      <ellipse cx="48" cy="13.5" rx="2.4" ry="2.8" fill="#1e1b4b"/>
+      <!-- Warm amber-brown iris accent -->
+      <circle cx="48.3" cy="13.2" r="1.8" fill="#78350f"/>
+      <!-- Pupil -->
+      <circle cx="48.5" cy="13.2" r="1.2" fill="#020617"/>
+      <!-- Sparkle Primary Reflection -->
+      <circle cx="47.6" cy="12.4" r="0.9" fill="#ffffff"/>
+      <!-- Secondary Mini Sparkle Reflection -->
+      <circle cx="49.2" cy="14.2" r="0.45" fill="#ffffff"/>
+      <!-- Soft Puppy Eyebrow -->
+      <path d="M 45.8 10.2 C 47.5 9.2, 49.5 9.8, 50.8 11" stroke="#b45309" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Rosy Cheek Blush -->
+    <ellipse cx="45" cy="18" rx="2.8" ry="1.6" fill="#f472b6" opacity="0.45"/>
+
+    <!-- Near Ear (Proper Floppy Drooping Puppy Ear folding over the cheek) -->
+    <path class="dog-ear" d="M 41 7 C 35 7, 33 14, 35 22 C 37 24, 43 23, 44 15 C 44 10, 43 7, 41 7 Z" fill="#d97706" stroke="#b45309" stroke-width="0.6"/>
+    <!-- Inner Ear Soft Shading -->
+    <path d="M 38 10 C 36 14, 36 19, 38 21" stroke="#fb7185" stroke-width="1.2" fill="none" opacity="0.55" stroke-linecap="round"/>
+  </g>
+</svg>

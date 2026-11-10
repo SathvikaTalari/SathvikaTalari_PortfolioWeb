@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 62" width="58" height="48">
+  <!-- Dynamic Floor Contact Shadow -->
+  <ellipse class="dog-shadow-oval" cx="37" cy="56" rx="24" ry="4" fill="rgba(0,0,0,0.32)"/>
+
+  <!-- Far Ear (Caramel with dark tip, behind head) -->
+  <path class="dog-far-ear" d="M 40 13 C 39 9, 44 8, 47 11 C 48 13, 46 16, 43 15 Z" fill="#8a5028"/>
+
+  <!-- Fluffy White Tail (with tan base, pointing up like photo) -->
+  <g class="dog-tail-group">
+    <path class="dog-tail" d="M 14 36 C 8 36, 6 27, 12 23 C 16 26, 17 32, 17 37 Z" fill="#ffffff" stroke="#e5dfd5" stroke-width="0.6" stroke-linecap="round"/>
+    <path d="M 15 33 C 13 32, 13 28, 15 26 C 17 28, 17 31, 16 34 Z" fill="#b4713c" opacity="0.7"/>
+    <circle cx="11.5" cy="24" r="3" fill="#ffffff"/>
+  </g>
+
+  <!-- Far Back Leg (Soft shaded white) -->
+  <g class="dog-leg dog-leg-back-left">
+    <rect x="17" y="38" width="6" height="15" rx="3" fill="#ded6c9"/>
+    <ellipse cx="19.8" cy="52.5" rx="4" ry="2.3" fill="#d2c7b7"/>
+  </g>
+
+  <!-- Far Front Leg (Soft shaded white) -->
+  <g class="dog-leg dog-leg-front-left">
+    <rect x="43" y="35" width="6" height="18" rx="3" fill="#ded6c9"/>
+    <ellipse cx="45.8" cy="52.5" rx="4" ry="2.3" fill="#d2c7b7"/>
+  </g>
+
+  <!-- Fluffy White Puppy Body (Contoured like standing puppy in photo) -->
+  <path class="dog-torso" d="M 18 34 C 18 28, 25 24, 34 24 C 42 24, 48 29, 48 36 C 48 44, 40 47, 32 47 C 22 47, 18 42, 18 34 Z" fill="#ffffff"/>
+
+  <!-- Caramel Brown Hip / Flank Patch (Exactly like photo!) -->
+  <path d="M 20 34 C 20 30, 24 28, 28 30 C 31 32, 31 37, 28 40 C 24 41, 20 39, 20 34 Z" fill="#b4713c"/>
+  <!-- Soft fur texture edge on hip patch -->
+  <path d="M 22 31 C 24 30, 26 31, 27 34 C 26 37, 23 38, 21 35 Z" fill="#9a5b28" opacity="0.5"/>
+
+  <!-- Near Back Leg (Sturdy fluffy white leg) -->
+  <g class="dog-leg dog-leg-back-right">
+    <path d="M 21 32 C 26 32, 29 38, 28 45 L 27 53 L 22 53 C 20 47, 20 40, 21 32 Z" fill="#ffffff"/>
+    <ellipse cx="24.8" cy="52.5" rx="4.2" ry="2.4" fill="#f5f0e8"/>
+    <!-- Subtle soft toe dividers -->
+    <path d="M 24 51.5 L 24 53.5 M 26 51.5 L 26 53.5" stroke="#d8cfc0" stroke-width="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Near Front Leg (Standing sturdy fluffy white leg) -->
+  <g class="dog-leg dog-leg-front-right">
+    <rect x="49" y="33" width="6.5" height="20" rx="3.2" fill="#ffffff"/>
+    <ellipse cx="52.2" cy="52.5" rx="4.5" ry="2.5" fill="#f5f0e8"/>
+    <path d="M 51 51.5 L 51 53.5 M 53.5 51.5 L 53.5 53.5" stroke="#d8cfc0" stroke-width="0.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Fluffy White Chest & Neck Ruff (Standing proudly) -->
+  <path d="M 42 25 C 47 25, 52 30, 52 37 C 52 41, 48 44, 44 44 C 40 44, 38 38, 38 32 C 38 27, 40 25, 42 25 Z" fill="#ffffff"/>
+
+  <!-- ==================== PHOTO-ACCURATE PUPPY HEAD ==================== -->
+  <g class="dog-head">
+    <!-- Caramel Brown Back Skull & Temple Patch -->
+    <path class="dog-head-caramel" d="M 38 22 C 36 15, 41 8, 49 8 C 53 8, 56 11, 57 14 C 55 17, 52 23, 48 25 C 44 26, 40 25, 38 22 Z" fill="#b4713c"/>
+    <!-- Darker amber shading on back skull -->
+    <path d="M 40 18 C 39 13, 42 9, 47 9 C 45 12, 44 17, 43 21 Z" fill="#8a5028" opacity="0.6"/>
+
+    <!-- White Forehead Blaze & Soft White Cheeks / Muzzle Base -->
+    <path class="dog-head-white" d="M 48 9 C 52 9, 55 12, 56 16 C 58 17.5, 61 18.5, 62 20.5 C 63 22, 62.5 24, 60 25 C 57 26.2, 53 26.5, 49 26 C 45 25.5, 43 23, 44 19 C 45 14, 46 10, 48 9 Z" fill="#ffffff"/>
+
+    <!-- SHORT, COMPACT, ROUNDED PUPPY MUZZLE (Not sticking out far!) -->
+    <!-- The muzzle extends just softly past the forehead line -->
+    <path class="dog-snout" d="M 55 17 C 57.5 18, 60 19, 61.5 20.2 C 62.8 21.2, 62.8 22.8, 61.8 24 C 60.5 25.2, 57.5 25.5, 54 25 C 52 24.5, 51 22.5, 52 20 C 53 18.5, 54 17.5, 55 17 Z" fill="#ffffff" stroke="#f0eae1" stroke-width="0.4"/>
+
+    <!-- Compact Round Black Button Nose at the Front -->
+    <ellipse cx="61.2" cy="21.2" rx="1.8" ry="1.5" fill="#1e1b18"/>
+    <!-- Tiny Soft White Specular Highlight on Nose -->
+    <circle cx="60.8" cy="20.7" r="0.45" fill="#ffffff"/>
+
+    <!-- Cute Tucked-in Puppy Mouth Line (Right under nose, compact!) -->
+    <path d="M 61 22.8 C 59.8 23.8, 57.5 23.8, 56 23.2" fill="none" stroke="#261c16" stroke-width="0.8" stroke-linecap="round"/>
+    <!-- Tiny chin shadow under mouth -->
+    <path d="M 59 24.2 C 58 24.8, 56.5 24.8, 55.5 24.2" fill="none" stroke="#d8cfc0" stroke-width="0.6" stroke-linecap="round"/>
+
+    <!-- Soulful Dark Puppy Eye with Dark Shadow Eyeliner (Exactly like photo!) -->
+    <g class="dog-eye-group">
+      <!-- Dark smudged eye shadow patch (characteristic of the puppy in photo) -->
+      <ellipse cx="52.8" cy="16.8" rx="3.2" ry="3" fill="#3d2516" opacity="0.55"/>
+      <!-- Eye socket -->
+      <ellipse cx="53.2" cy="16.5" rx="2.5" ry="2.6" fill="#1c140e"/>
+      <!-- Deep warm brown iris -->
+      <circle cx="53.4" cy="16.3" r="1.8" fill="#4a2e1b"/>
+      <!-- Dark pupil -->
+      <circle cx="53.6" cy="16.3" r="1.2" fill="#0a0705"/>
+      <!-- Specular White Reflection Dot -->
+      <circle cx="52.8" cy="15.6" r="0.75" fill="#ffffff"/>
+      <circle cx="54.2" cy="17.1" r="0.35" fill="#ffffff"/>
+      <!-- Gentle Soft Puppy Brow -->
+      <path d="M 51 13.5 C 52.5 12.8, 54.5 13.2, 55.8 14.2" stroke="#6b4226" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Caramel Brown Floppy Ear (Folded forward/down like in photo!) -->
+    <g class="dog-ear-group">
+      <path class="dog-ear" d="M 45 10 C 42 10, 39 14, 40 21 C 41 23, 46 22, 47 16 C 48 12, 47 10, 45 10 Z" fill="#a66736" stroke="#8a5028" stroke-width="0.6"/>
+      <!-- Dark folded ear tip and rim (Just like photo!) -->
+      <path d="M 41 12 C 40 16, 40 19, 41 21 C 42 22, 44 21, 45 17 Z" fill="#542e14" opacity="0.5"/>
+      <!-- Soft inner ear shadow -->
+      <path d="M 43 12 C 42 15, 42 18, 43 19" stroke="#3b1e0d" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.6"/>
+    </g>
+  </g>
+</svg>
