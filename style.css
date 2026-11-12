@@ -4614,6 +4614,7 @@ a:hover { color: #ffffff; text-shadow: 0 0 10px rgba(56, 189, 248, 0.4); }
    PLAYFUL JUMPING DOG COMPANION STYLES
    =================================================================== */
 .jumping-dog-container {
+  display: none !important; /* <--- TEMPORARILY DISABLED: Delete this line to reactivate the dog */
   position: fixed;
   bottom: 12px;
   left: 0;

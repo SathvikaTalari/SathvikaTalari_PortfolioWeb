@@ -2013,6 +2013,7 @@ document.addEventListener("keydown", (e) => {
   const dog = document.getElementById("jumping-dog");
   const speechBubble = document.getElementById("dog-speech-bubble");
   if (!dog || !speechBubble) return;
+  if (window.getComputedStyle(dog).display === "none") return; // Pauses loop when dog is hidden
 
   // Sound effects via Web Audio API (gentle, synthesized puppy chirp)
   let audioCtx = null;
