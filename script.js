@@ -1581,6 +1581,8 @@ document.querySelectorAll(".cert-view-modal-btn, .cert-thumb-trigger").forEach(b
     { title: "Academic Credentials (9.5 CGPA & 90%)", category: "Education", action: () => location.hash = "#education" },
     { title: "Hackathons & SIH Qualifications", category: "Honors", action: () => location.hash = "#achievements" },
     { title: "Verifiable Certifications (HackerRank, LinkedIn, Udemy, Meraudi)", category: "Certifications", action: () => setCertificationsExpanded(true, true) },
+    { title: "LinkedIn Learning — Docker Essential Training", category: "Certifications", action: () => setCertificationsExpanded(true, true) },
+    { title: "LinkedIn Learning — Learning Git and GitHub", category: "Certifications", action: () => setCertificationsExpanded(true, true) },
     { title: "Udemy — The Complete Full-Stack Web Development Bootcamp", category: "Certifications", action: () => setCertificationsExpanded(true, true) },
     { title: "Meraudi Education Mart — SQL and Python Programming", category: "Certifications", action: () => setCertificationsExpanded(true, true) },
     { title: "Get in Touch (Contact Form & Email)", category: "Contact", action: () => location.hash = "#contact" },
